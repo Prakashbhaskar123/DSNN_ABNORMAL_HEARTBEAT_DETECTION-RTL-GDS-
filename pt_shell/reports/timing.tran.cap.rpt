@@ -1,0 +1,143 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-input_pins
+	-nets
+	-max_paths 1
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : DSNN_2Layer
+Version: U-2022.12-SP3
+Date   : Mon Mar  9 18:30:53 2026
+****************************************
+
+
+  Startpoint: layer2[0].acc_reg[0]
+               (rising edge-triggered flip-flop clocked by my_clk)
+  Endpoint: layer2[0].acc_reg[31]
+               (rising edge-triggered flip-flop clocked by my_clk)
+  Path Group: my_clk
+  Path Type: max
+
+  Point                       Fanout    Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  clock my_clk (rise edge)                        0.00       0.00       0.00
+  clock network delay (ideal)                                0.00       0.00
+  layer2[0].acc_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00       0.00 r
+  layer2[0].acc_reg[0]/Q (DFFARX1_RVT)            0.04       0.17       0.17 r
+  layer2_out_flat[0] (net)       3     1.60 
+  add_76_I4/U33/A1 (AND2X1_RVT)                   0.04       0.00       0.17 r
+  add_76_I4/U33/Y (AND2X1_RVT)                    0.03       0.06       0.23 r
+  add_76_I4/carry[1] (net)       1     1.69 
+  add_76_I4/U1_1/CI (FADDX1_RVT)                  0.03       0.00       0.23 r
+  add_76_I4/U1_1/CO (FADDX1_RVT)                  0.05       0.09       0.32 r
+  add_76_I4/carry[2] (net)       1     1.69 
+  add_76_I4/U1_2/CI (FADDX1_RVT)                  0.05       0.00       0.32 r
+  add_76_I4/U1_2/CO (FADDX1_RVT)                  0.05       0.10       0.42 r
+  add_76_I4/carry[3] (net)       1     1.69 
+  add_76_I4/U1_3/CI (FADDX1_RVT)                  0.05       0.00       0.42 r
+  add_76_I4/U1_3/CO (FADDX1_RVT)                  0.05       0.10       0.52 r
+  add_76_I4/carry[4] (net)       1     1.69 
+  add_76_I4/U1_4/CI (FADDX1_RVT)                  0.05       0.00       0.52 r
+  add_76_I4/U1_4/CO (FADDX1_RVT)                  0.05       0.10       0.62 r
+  add_76_I4/carry[5] (net)       1     1.69 
+  add_76_I4/U1_5/CI (FADDX1_RVT)                  0.05       0.00       0.62 r
+  add_76_I4/U1_5/CO (FADDX1_RVT)                  0.05       0.10       0.72 r
+  add_76_I4/carry[6] (net)       1     1.69 
+  add_76_I4/U1_6/CI (FADDX1_RVT)                  0.05       0.00       0.72 r
+  add_76_I4/U1_6/CO (FADDX1_RVT)                  0.05       0.10       0.82 r
+  add_76_I4/carry[7] (net)       1     1.69 
+  add_76_I4/U1_7/CI (FADDX1_RVT)                  0.05       0.00       0.82 r
+  add_76_I4/U1_7/CO (FADDX1_RVT)                  0.05       0.10       0.92 r
+  add_76_I4/carry[8] (net)       1     1.69 
+  add_76_I4/U1_8/CI (FADDX1_RVT)                  0.05       0.00       0.92 r
+  add_76_I4/U1_8/CO (FADDX1_RVT)                  0.05       0.10       1.02 r
+  add_76_I4/carry[9] (net)       1     1.69 
+  add_76_I4/U1_9/CI (FADDX1_RVT)                  0.05       0.00       1.02 r
+  add_76_I4/U1_9/CO (FADDX1_RVT)                  0.05       0.10       1.12 r
+  add_76_I4/carry[10] (net)      1     1.69 
+  add_76_I4/U1_10/CI (FADDX1_RVT)                 0.05       0.00       1.12 r
+  add_76_I4/U1_10/CO (FADDX1_RVT)                 0.05       0.10       1.21 r
+  add_76_I4/carry[11] (net)      1     1.69 
+  add_76_I4/U1_11/CI (FADDX1_RVT)                 0.05       0.00       1.21 r
+  add_76_I4/U1_11/CO (FADDX1_RVT)                 0.05       0.10       1.31 r
+  add_76_I4/carry[12] (net)      1     1.69 
+  add_76_I4/U1_12/CI (FADDX1_RVT)                 0.05       0.00       1.31 r
+  add_76_I4/U1_12/CO (FADDX1_RVT)                 0.05       0.10       1.41 r
+  add_76_I4/carry[13] (net)      1     1.69 
+  add_76_I4/U1_13/CI (FADDX1_RVT)                 0.05       0.00       1.41 r
+  add_76_I4/U1_13/CO (FADDX1_RVT)                 0.05       0.10       1.51 r
+  add_76_I4/carry[14] (net)      1     1.69 
+  add_76_I4/U1_14/CI (FADDX1_RVT)                 0.05       0.00       1.51 r
+  add_76_I4/U1_14/CO (FADDX1_RVT)                 0.05       0.10       1.61 r
+  add_76_I4/carry[15] (net)      1     1.69 
+  add_76_I4/U1_15/CI (FADDX1_RVT)                 0.05       0.00       1.61 r
+  add_76_I4/U1_15/CO (FADDX1_RVT)                 0.05       0.10       1.71 r
+  add_76_I4/carry[16] (net)      2     2.13 
+  add_76_I4/U32/A2 (AND2X1_RVT)                   0.05       0.00       1.71 r
+  add_76_I4/U32/Y (AND2X1_RVT)                    0.03       0.07       1.78 r
+  add_76_I4/carry[17] (net)      2     2.13 
+  add_76_I4/U31/A2 (AND2X1_RVT)                   0.03       0.00       1.78 r
+  add_76_I4/U31/Y (AND2X1_RVT)                    0.03       0.06       1.85 r
+  add_76_I4/carry[18] (net)      2     2.13 
+  add_76_I4/U30/A2 (AND2X1_RVT)                   0.03       0.00       1.85 r
+  add_76_I4/U30/Y (AND2X1_RVT)                    0.03       0.06       1.91 r
+  add_76_I4/carry[19] (net)      2     2.13 
+  add_76_I4/U29/A2 (AND2X1_RVT)                   0.03       0.00       1.91 r
+  add_76_I4/U29/Y (AND2X1_RVT)                    0.03       0.06       1.97 r
+  add_76_I4/carry[20] (net)      2     2.13 
+  add_76_I4/U28/A2 (AND2X1_RVT)                   0.03       0.00       1.97 r
+  add_76_I4/U28/Y (AND2X1_RVT)                    0.03       0.06       2.04 r
+  add_76_I4/carry[21] (net)      2     2.13 
+  add_76_I4/U27/A2 (AND2X1_RVT)                   0.03       0.00       2.04 r
+  add_76_I4/U27/Y (AND2X1_RVT)                    0.03       0.06       2.10 r
+  add_76_I4/carry[22] (net)      2     2.13 
+  add_76_I4/U26/A2 (AND2X1_RVT)                   0.03       0.00       2.10 r
+  add_76_I4/U26/Y (AND2X1_RVT)                    0.03       0.06       2.16 r
+  add_76_I4/carry[23] (net)      2     2.13 
+  add_76_I4/U25/A2 (AND2X1_RVT)                   0.03       0.00       2.16 r
+  add_76_I4/U25/Y (AND2X1_RVT)                    0.03       0.06       2.23 r
+  add_76_I4/carry[24] (net)      2     2.13 
+  add_76_I4/U24/A2 (AND2X1_RVT)                   0.03       0.00       2.23 r
+  add_76_I4/U24/Y (AND2X1_RVT)                    0.03       0.06       2.29 r
+  add_76_I4/carry[25] (net)      2     2.13 
+  add_76_I4/U23/A2 (AND2X1_RVT)                   0.03       0.00       2.29 r
+  add_76_I4/U23/Y (AND2X1_RVT)                    0.03       0.06       2.35 r
+  add_76_I4/carry[26] (net)      2     2.13 
+  add_76_I4/U22/A2 (AND2X1_RVT)                   0.03       0.00       2.35 r
+  add_76_I4/U22/Y (AND2X1_RVT)                    0.03       0.06       2.42 r
+  add_76_I4/carry[27] (net)      2     2.13 
+  add_76_I4/U21/A2 (AND2X1_RVT)                   0.03       0.00       2.42 r
+  add_76_I4/U21/Y (AND2X1_RVT)                    0.03       0.06       2.48 r
+  add_76_I4/carry[28] (net)      2     2.13 
+  add_76_I4/U20/A2 (AND2X1_RVT)                   0.03       0.00       2.48 r
+  add_76_I4/U20/Y (AND2X1_RVT)                    0.03       0.06       2.55 r
+  add_76_I4/carry[29] (net)      2     2.13 
+  add_76_I4/U19/A2 (AND2X1_RVT)                   0.03       0.00       2.55 r
+  add_76_I4/U19/Y (AND2X1_RVT)                    0.03       0.06       2.61 r
+  add_76_I4/carry[30] (net)      2     2.05 
+  add_76_I4/U18/A2 (NAND2X0_RVT)                  0.03       0.00       2.61 r
+  add_76_I4/U18/Y (NAND2X0_RVT)                   0.05       0.05       2.66 f
+  add_76_I4/n1 (net)             1     1.28 
+  add_76_I4/U17/A2 (XNOR2X1_RVT)                  0.05       0.00       2.66 f
+  add_76_I4/U17/Y (XNOR2X1_RVT)                   0.04       0.12       2.78 r
+  add_76_I4/SUM[31] (net)        1     0.55 
+  layer2[0].acc_reg[31]/D (DFFARX1_RVT)           0.04       0.00       2.78 r
+  data arrival time                                                     2.78
+
+  clock my_clk (rise edge)                        0.00       4.00       4.00
+  clock network delay (ideal)                                0.00       4.00
+  clock reconvergence pessimism                              0.00       4.00
+  layer2[0].acc_reg[31]/CLK (DFFARX1_RVT)                               4.00 r
+  library setup time                                        -0.06       3.94
+  data required time                                                    3.94
+  -----------------------------------------------------------------------------
+  data required time                                                    3.94
+  data arrival time                                                    -2.78
+  -----------------------------------------------------------------------------
+  slack (MET)                                                           1.16
+
+
+1
