@@ -1,0 +1,225 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : DSNN_2Layer
+Version: T-2022.03-SP5-4
+Date   : Sat Mar  7 10:41:39 2026
+****************************************
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: layer2[1].acc_reg[15]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DSNN_2Layer        8000                  saed32rvt_ss0p95v125c
+
+  Point                                        Incr       Path
+  ---------------------------------------------------------------
+  layer2[1].acc_reg[15]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[15]/Q (DFFARX1_RVT)        0.17       0.17 r
+  layer2_out_flat[31] (out)                    0.00       0.17 r
+  data arrival time                                       0.17
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[14]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[30]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DSNN_2Layer        8000                  saed32rvt_ss0p95v125c
+
+  Point                                        Incr       Path
+  ---------------------------------------------------------------
+  layer2[1].acc_reg[14]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[14]/Q (DFFARX1_RVT)        0.17       0.17 r
+  layer2_out_flat[30] (out)                    0.00       0.17 r
+  data arrival time                                       0.17
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[13]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[29]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DSNN_2Layer        8000                  saed32rvt_ss0p95v125c
+
+  Point                                        Incr       Path
+  ---------------------------------------------------------------
+  layer2[1].acc_reg[13]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[13]/Q (DFFARX1_RVT)        0.17       0.17 r
+  layer2_out_flat[29] (out)                    0.00       0.17 r
+  data arrival time                                       0.17
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[12]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[28]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DSNN_2Layer        8000                  saed32rvt_ss0p95v125c
+
+  Point                                        Incr       Path
+  ---------------------------------------------------------------
+  layer2[1].acc_reg[12]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[12]/Q (DFFARX1_RVT)        0.17       0.17 r
+  layer2_out_flat[28] (out)                    0.00       0.17 r
+  data arrival time                                       0.17
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[11]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[27]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DSNN_2Layer        8000                  saed32rvt_ss0p95v125c
+
+  Point                                        Incr       Path
+  ---------------------------------------------------------------
+  layer2[1].acc_reg[11]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[11]/Q (DFFARX1_RVT)        0.17       0.17 r
+  layer2_out_flat[27] (out)                    0.00       0.17 r
+  data arrival time                                       0.17
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[10]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[26]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DSNN_2Layer        8000                  saed32rvt_ss0p95v125c
+
+  Point                                        Incr       Path
+  ---------------------------------------------------------------
+  layer2[1].acc_reg[10]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[10]/Q (DFFARX1_RVT)        0.17       0.17 r
+  layer2_out_flat[26] (out)                    0.00       0.17 r
+  data arrival time                                       0.17
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[9]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[25]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DSNN_2Layer        8000                  saed32rvt_ss0p95v125c
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  layer2[1].acc_reg[9]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[9]/Q (DFFARX1_RVT)        0.17       0.17 r
+  layer2_out_flat[25] (out)                   0.00       0.17 r
+  data arrival time                                      0.17
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[8]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[24]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DSNN_2Layer        8000                  saed32rvt_ss0p95v125c
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  layer2[1].acc_reg[8]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[8]/Q (DFFARX1_RVT)        0.17       0.17 r
+  layer2_out_flat[24] (out)                   0.00       0.17 r
+  data arrival time                                      0.17
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[7]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[23]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DSNN_2Layer        8000                  saed32rvt_ss0p95v125c
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  layer2[1].acc_reg[7]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[7]/Q (DFFARX1_RVT)        0.17       0.17 r
+  layer2_out_flat[23] (out)                   0.00       0.17 r
+  data arrival time                                      0.17
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[6]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[22]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DSNN_2Layer        8000                  saed32rvt_ss0p95v125c
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  layer2[1].acc_reg[6]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[6]/Q (DFFARX1_RVT)        0.17       0.17 r
+  layer2_out_flat[22] (out)                   0.00       0.17 r
+  data arrival time                                      0.17
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
