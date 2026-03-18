@@ -1,0 +1,367 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : DSNN_2Layer
+Version: U-2022.12-SP4
+Date   : Tue Mar 10 10:35:57 2026
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+
+  Startpoint: layer2[0].acc_reg[8]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[8]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  layer2[0].acc_reg[8]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[0].acc_reg[8]/Q (DFFARX1_RVT)        0.19       0.19 r
+  U64/Y (NBUFFX2_RVT)                         0.09 *     0.28 r
+  layer2_out_flat[8] (out)                    0.00 *     0.28 r
+  data arrival time                                      0.28
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[15]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                        Incr       Path
+  ---------------------------------------------------------------
+  layer2[1].acc_reg[15]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[15]/Q (DFFARX1_RVT)        0.19       0.19 r
+  U68/Y (NBUFFX2_RVT)                          0.08 *     0.27 r
+  layer2_out_flat[31] (out)                    0.00 *     0.27 r
+  data arrival time                                       0.27
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[0].acc_reg[7]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[7]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  layer2[0].acc_reg[7]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[0].acc_reg[7]/Q (DFFARX1_RVT)        0.19       0.19 r
+  U63/Y (NBUFFX2_RVT)                         0.08 *     0.27 r
+  layer2_out_flat[7] (out)                    0.00 *     0.27 r
+  data arrival time                                      0.27
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[0].acc_reg[6]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[6]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  layer2[0].acc_reg[6]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[0].acc_reg[6]/Q (DFFARX1_RVT)        0.19       0.19 r
+  U62/Y (NBUFFX2_RVT)                         0.08 *     0.27 r
+  layer2_out_flat[6] (out)                    0.00 *     0.27 r
+  data arrival time                                      0.27
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[0].acc_reg[4]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[4]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  layer2[0].acc_reg[4]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[0].acc_reg[4]/Q (DFFARX1_RVT)        0.19       0.19 r
+  U60/Y (NBUFFX2_RVT)                         0.08 *     0.27 r
+  layer2_out_flat[4] (out)                    0.00 *     0.27 r
+  data arrival time                                      0.27
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[0].acc_reg[5]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  layer2[0].acc_reg[5]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[0].acc_reg[5]/Q (DFFARX1_RVT)        0.19       0.19 r
+  U61/Y (NBUFFX2_RVT)                         0.08 *     0.27 r
+  layer2_out_flat[5] (out)                    0.00 *     0.27 r
+  data arrival time                                      0.27
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[14]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[30]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                        Incr       Path
+  ---------------------------------------------------------------
+  layer2[1].acc_reg[14]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[14]/Q (DFFARX1_RVT)        0.19       0.19 r
+  U67/Y (NBUFFX2_RVT)                          0.08 *     0.26 r
+  layer2_out_flat[30] (out)                    0.00 *     0.26 r
+  data arrival time                                       0.26
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[13]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[29]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                        Incr       Path
+  ---------------------------------------------------------------
+  layer2[1].acc_reg[13]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[13]/Q (DFFARX1_RVT)        0.19       0.19 r
+  U66/Y (NBUFFX2_RVT)                          0.07 *     0.26 r
+  layer2_out_flat[29] (out)                    0.00 *     0.26 r
+  data arrival time                                       0.26
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[0].acc_reg[3]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[3]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  layer2[0].acc_reg[3]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[0].acc_reg[3]/Q (DFFARX1_RVT)        0.19       0.19 r
+  U59/Y (NBUFFX2_RVT)                         0.07 *     0.26 r
+  layer2_out_flat[3] (out)                    0.00 *     0.26 r
+  data arrival time                                      0.26
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[12]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[28]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                        Incr       Path
+  ---------------------------------------------------------------
+  layer2[1].acc_reg[12]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[12]/Q (DFFARX1_RVT)        0.19       0.19 r
+  U65/Y (NBUFFX2_RVT)                          0.07 *     0.26 r
+  layer2_out_flat[28] (out)                    0.00 *     0.26 r
+  data arrival time                                       0.26
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[0].acc_reg[0]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[0]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  layer2[0].acc_reg[0]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[0].acc_reg[0]/Q (DFFARX1_RVT)        0.19       0.19 r
+  U58/Y (NBUFFX2_RVT)                         0.07 *     0.26 r
+  layer2_out_flat[0] (out)                    0.00 *     0.26 r
+  data arrival time                                      0.26
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[0].acc_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[2]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  layer2[0].acc_reg[2]/CLK (DFFARX2_RVT)      0.00       0.00 r
+  layer2[0].acc_reg[2]/Q (DFFARX2_RVT)        0.24       0.24 r
+  layer2_out_flat[2] (out)                    0.00 *     0.24 r
+  data arrival time                                      0.24
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[0].acc_reg[1]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[1]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  layer2[0].acc_reg[1]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[0].acc_reg[1]/Q (DFFARX1_RVT)        0.23       0.23 r
+  layer2_out_flat[1] (out)                    0.00 *     0.23 r
+  data arrival time                                      0.23
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[11]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[27]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                        Incr       Path
+  ---------------------------------------------------------------
+  layer2[1].acc_reg[11]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[11]/Q (DFFARX1_RVT)        0.22       0.22 r
+  layer2_out_flat[27] (out)                    0.00 *     0.22 r
+  data arrival time                                       0.22
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[10]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[26]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                        Incr       Path
+  ---------------------------------------------------------------
+  layer2[1].acc_reg[10]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[10]/Q (DFFARX1_RVT)        0.22       0.22 r
+  layer2_out_flat[26] (out)                    0.00 *     0.22 r
+  data arrival time                                       0.22
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[0].acc_reg[9]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[9]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  layer2[0].acc_reg[9]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[0].acc_reg[9]/Q (DFFARX1_RVT)        0.22       0.22 r
+  layer2_out_flat[9] (out)                    0.00 *     0.22 r
+  data arrival time                                      0.22
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[9]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[25]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  layer2[1].acc_reg[9]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[9]/Q (DFFARX1_RVT)        0.22       0.22 r
+  layer2_out_flat[25] (out)                   0.00 *     0.22 r
+  data arrival time                                      0.22
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[0].acc_reg[10]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[10]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                        Incr       Path
+  ---------------------------------------------------------------
+  layer2[0].acc_reg[10]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[0].acc_reg[10]/Q (DFFARX1_RVT)        0.21       0.21 r
+  layer2_out_flat[10] (out)                    0.00 *     0.21 r
+  data arrival time                                       0.21
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[1].acc_reg[6]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[22]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  layer2[1].acc_reg[6]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[1].acc_reg[6]/Q (DFFARX1_RVT)        0.20       0.20 r
+  layer2_out_flat[22] (out)                   0.00 *     0.20 r
+  data arrival time                                      0.20
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: layer2[0].acc_reg[11]
+              (rising edge-triggered flip-flop)
+  Endpoint: layer2_out_flat[11]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                        Incr       Path
+  ---------------------------------------------------------------
+  layer2[0].acc_reg[11]/CLK (DFFARX1_RVT)      0.00       0.00 r
+  layer2[0].acc_reg[11]/Q (DFFARX1_RVT)        0.20       0.20 r
+  layer2_out_flat[11] (out)                    0.00 *     0.20 r
+  data arrival time                                       0.20
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

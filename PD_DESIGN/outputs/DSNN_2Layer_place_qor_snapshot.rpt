@@ -1,0 +1,2 @@
+Error: Directory (/home/ece/ASICFULL/ASIC-Flow_labs_v1p4/scripts_and_source_codes/pnr/DSNN_2Layer/snapshot) is not accessible. Please check the setting on icc_snapshot_storage_location variable. (UID-187)
+0

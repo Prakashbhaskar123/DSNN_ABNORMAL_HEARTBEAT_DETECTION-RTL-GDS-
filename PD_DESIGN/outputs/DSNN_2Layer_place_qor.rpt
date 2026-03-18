@@ -1,0 +1,87 @@
+Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : qor
+Design : DSNN_2Layer
+Version: U-2022.12-SP4
+Date   : Tue Mar 10 10:00:14 2026
+****************************************
+
+
+  Timing Path Group (none)
+  -----------------------------------
+  Levels of Logic:               1.00
+  Critical Path Length:          0.28
+  Critical Path Slack:         uninit
+  Critical Path Clk Period:       n/a
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         16
+  Hierarchical Port Count:       1317
+  Leaf Cell Count:               2312
+  Buf/Inv Cell Count:             135
+  Buf Cell Count:                  55
+  Inv Cell Count:                  80
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      2105
+  Sequential Cell Count:          207
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     8081.779021
+  Noncombinational Area:  1474.543513
+  Buf/Inv Area:            303.193795
+  Total Buffer Area:           174.34
+  Total Inverter Area:         128.85
+  Macro/Black Box Area:      0.000000
+  Net Area:               2110.894043
+  Net XLength        :       16861.32
+  Net YLength        :       14392.21
+  -----------------------------------
+  Cell Area:              9556.322534
+  Design Area:           11667.216577
+  Net Length        :        31253.53
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          3029
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: vlsid38.vishnu.edu.in
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.00
+  Logic Optimization:                  0.00
+  Mapping Optimization:                0.17
+  -----------------------------------------
+  Overall Compile Time:                0.19
+  Overall Compile Wall Clock Time:     0.23
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
