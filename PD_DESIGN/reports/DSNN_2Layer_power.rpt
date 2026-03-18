@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : DSNN_2Layer
+Version: U-2022.12-SP4
+Date   : Tue Mar 10 11:36:06 2026
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v125c (File: /home/ece/ASICFULL/ASIC-Flow_labs_v1p4/library_32nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db)
+
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+DSNN_2Layer            ForQA             saed32rvt_ss0p95v125c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 483.4236 uW   (78%)
+  Net Switching Power  = 137.4727 uW   (22%)
+                         ---------
+Total Dynamic Power    = 620.8963 uW  (100%)
+
+Cell Leakage Power     = 516.5610 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network    322.9392           55.2916        1.1829e+07          390.0593  (  34.29%)  i
+register           1.2944            0.5363        9.5921e+07           97.7518  (   8.59%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    159.1901           81.6447        4.0881e+08          649.6464  (  57.11%)
+--------------------------------------------------------------------------------------------------
+Total            483.4237 uW       137.4726 uW     5.1656e+08 pW     1.1375e+03 uW
+1

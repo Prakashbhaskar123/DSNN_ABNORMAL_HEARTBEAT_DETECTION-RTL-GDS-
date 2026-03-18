@@ -1,0 +1,1397 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : DSNN_2Layer
+Version: U-2022.12-SP4
+Date   : Tue Mar 10 10:54:16 2026
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRVirtualC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 125/125/125
+
+Information: Percent of Arnoldi-based delays =  2.33%
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[1].mac1/acc_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                      Incr       Path
+  -----------------------------------------------------------------------------
+  clock clk (rise edge)                                      0.00       0.00
+  clock network delay (propagated)                           0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                       0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                         0.19       0.24 r
+  ds/data_out[1] (DataShift_WIDTH16)                         0.00       0.24 r
+  U49/Y (NBUFFX8_RVT)                                        0.09 *     0.33 r
+  U50/Y (NBUFFX16_RVT)                                       0.09 *     0.42 r
+  layer1[1].mac1/IN1 (MAC)                                   0.00       0.42 r
+  layer1[1].mac1/mult_14/IN1 (MAC_DW_mult_tc_1)              0.00       0.42 r
+  layer1[1].mac1/mult_14/U527/Y (XNOR2X1_RVT)                0.12 *     0.54 f
+  layer1[1].mac1/mult_14/U7/Y (NBUFFX4_RVT)                  0.07 *     0.62 f
+  layer1[1].mac1/mult_14/U525/Y (NAND2X2_RVT)                0.13 *     0.75 r
+  layer1[1].mac1/mult_14/U426/Y (OAI22X1_RVT)                0.09 *     0.83 f
+  layer1[1].mac1/mult_14/U187/SO (HADDX1_RVT)                0.11 *     0.94 r
+  layer1[1].mac1/mult_14/U79/CO (FADDX1_RVT)                 0.10 *     1.04 r
+  layer1[1].mac1/mult_14/U78/CO (FADDX1_RVT)                 0.10 *     1.15 r
+  layer1[1].mac1/mult_14/U77/CO (FADDX1_RVT)                 0.10 *     1.25 r
+  layer1[1].mac1/mult_14/U76/CO (FADDX1_RVT)                 0.11 *     1.36 r
+  layer1[1].mac1/mult_14/U75/CO (FADDX1_RVT)                 0.10 *     1.46 r
+  layer1[1].mac1/mult_14/U74/CO (FADDX1_RVT)                 0.10 *     1.57 r
+  layer1[1].mac1/mult_14/U73/CO (FADDX1_RVT)                 0.10 *     1.67 r
+  layer1[1].mac1/mult_14/U72/CO (FADDX1_RVT)                 0.10 *     1.77 r
+  layer1[1].mac1/mult_14/U71/CO (FADDX1_RVT)                 0.10 *     1.87 r
+  layer1[1].mac1/mult_14/U70/CO (FADDX1_RVT)                 0.10 *     1.97 r
+  layer1[1].mac1/mult_14/U69/CO (FADDX1_RVT)                 0.10 *     2.07 r
+  layer1[1].mac1/mult_14/U68/CO (FADDX1_RVT)                 0.10 *     2.17 r
+  layer1[1].mac1/mult_14/U67/CO (FADDX1_RVT)                 0.10 *     2.27 r
+  layer1[1].mac1/mult_14/U66/CO (FADDX1_RVT)                 0.10 *     2.37 r
+  layer1[1].mac1/mult_14/U65/CO (FADDX1_RVT)                 0.10 *     2.48 r
+  layer1[1].mac1/mult_14/U64/CO (FADDX1_RVT)                 0.10 *     2.58 r
+  layer1[1].mac1/mult_14/U63/CO (FADDX1_RVT)                 0.10 *     2.68 r
+  layer1[1].mac1/mult_14/U62/CO (FADDX1_RVT)                 0.10 *     2.79 r
+  layer1[1].mac1/mult_14/U61/CO (FADDX1_RVT)                 0.10 *     2.89 r
+  layer1[1].mac1/mult_14/U60/CO (FADDX1_RVT)                 0.11 *     2.99 r
+  layer1[1].mac1/mult_14/U59/CO (FADDX1_RVT)                 0.10 *     3.10 r
+  layer1[1].mac1/mult_14/U58/CO (FADDX1_RVT)                 0.10 *     3.20 r
+  layer1[1].mac1/mult_14/U57/CO (FADDX1_RVT)                 0.10 *     3.30 r
+  layer1[1].mac1/mult_14/U56/CO (FADDX1_RVT)                 0.10 *     3.39 r
+  layer1[1].mac1/mult_14/U55/CO (FADDX1_RVT)                 0.10 *     3.49 r
+  layer1[1].mac1/mult_14/U54/CO (FADDX1_RVT)                 0.10 *     3.59 r
+  layer1[1].mac1/mult_14/U53/CO (FADDX1_RVT)                 0.10 *     3.69 r
+  layer1[1].mac1/mult_14/U52/S (FADDX1_RVT)                  0.16 *     3.85 f
+  layer1[1].mac1/mult_14/product[30] (MAC_DW_mult_tc_1)      0.00       3.85 f
+  layer1[1].mac1/add_14/B[30] (MAC_DW01_add_0)               0.00       3.85 f
+  layer1[1].mac1/add_14/U1_30/CO (FADDX1_RVT)                0.09 *     3.94 f
+  layer1[1].mac1/add_14/U1_31/S (FADDX1_RVT)                 0.15 *     4.09 r
+  layer1[1].mac1/add_14/SUM[31] (MAC_DW01_add_0)             0.00       4.09 r
+  layer1[1].mac1/acc_reg[31]/D (DFFARX1_RVT)                 0.00 *     4.09 r
+  data arrival time                                                     4.09
+
+  clock clk (rise edge)                                      4.00       4.00
+  clock network delay (propagated)                           0.06       4.06
+  layer1[1].mac1/acc_reg[31]/CLK (DFFARX1_RVT)               0.00       4.06 r
+  library setup time                                        -0.06       4.00
+  data required time                                                    4.00
+  -----------------------------------------------------------------------------
+  data required time                                                    4.00
+  data arrival time                                                    -4.09
+  -----------------------------------------------------------------------------
+  slack (VIOLATED)                                                     -0.09
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[0].mac1/acc_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                        Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                        0.00       0.00
+  clock network delay (propagated)                             0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                         0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                           0.19       0.24 r
+  ds/data_out[1] (DataShift_WIDTH16)                           0.00       0.24 r
+  U49/Y (NBUFFX8_RVT)                                          0.09 *     0.33 r
+  U50/Y (NBUFFX16_RVT)                                         0.09 *     0.42 r
+  layer1[0].mac1/IN3 (MAC_0)                                   0.00       0.42 r
+  layer1[0].mac1/mult_14/IN3 (MAC_DW_mult_tc_1_0)              0.00       0.42 r
+  layer1[0].mac1/mult_14/U527/Y (XNOR2X1_RVT)                  0.12 *     0.54 f
+  layer1[0].mac1/mult_14/U9/Y (NBUFFX4_RVT)                    0.07 *     0.62 f
+  layer1[0].mac1/mult_14/U525/Y (NAND2X2_RVT)                  0.13 *     0.75 r
+  layer1[0].mac1/mult_14/U426/Y (OAI22X1_RVT)                  0.09 *     0.84 f
+  layer1[0].mac1/mult_14/U187/SO (HADDX1_RVT)                  0.11 *     0.95 r
+  layer1[0].mac1/mult_14/U79/CO (FADDX1_RVT)                   0.10 *     1.05 r
+  layer1[0].mac1/mult_14/U78/CO (FADDX1_RVT)                   0.10 *     1.15 r
+  layer1[0].mac1/mult_14/U77/CO (FADDX1_RVT)                   0.10 *     1.25 r
+  layer1[0].mac1/mult_14/U76/CO (FADDX1_RVT)                   0.10 *     1.35 r
+  layer1[0].mac1/mult_14/U75/CO (FADDX1_RVT)                   0.10 *     1.45 r
+  layer1[0].mac1/mult_14/U74/CO (FADDX1_RVT)                   0.10 *     1.55 r
+  layer1[0].mac1/mult_14/U73/CO (FADDX1_RVT)                   0.10 *     1.65 r
+  layer1[0].mac1/mult_14/U72/CO (FADDX1_RVT)                   0.10 *     1.76 r
+  layer1[0].mac1/mult_14/U71/CO (FADDX1_RVT)                   0.10 *     1.86 r
+  layer1[0].mac1/mult_14/U70/CO (FADDX1_RVT)                   0.10 *     1.96 r
+  layer1[0].mac1/mult_14/U69/CO (FADDX1_RVT)                   0.10 *     2.06 r
+  layer1[0].mac1/mult_14/U68/CO (FADDX1_RVT)                   0.10 *     2.16 r
+  layer1[0].mac1/mult_14/U67/CO (FADDX1_RVT)                   0.10 *     2.26 r
+  layer1[0].mac1/mult_14/U66/CO (FADDX1_RVT)                   0.10 *     2.37 r
+  layer1[0].mac1/mult_14/U65/CO (FADDX1_RVT)                   0.10 *     2.47 r
+  layer1[0].mac1/mult_14/U64/CO (FADDX1_RVT)                   0.10 *     2.57 r
+  layer1[0].mac1/mult_14/U63/CO (FADDX1_RVT)                   0.10 *     2.67 r
+  layer1[0].mac1/mult_14/U62/CO (FADDX1_RVT)                   0.10 *     2.77 r
+  layer1[0].mac1/mult_14/U61/CO (FADDX1_RVT)                   0.10 *     2.87 r
+  layer1[0].mac1/mult_14/U60/CO (FADDX1_RVT)                   0.10 *     2.98 r
+  layer1[0].mac1/mult_14/U59/CO (FADDX1_RVT)                   0.10 *     3.08 r
+  layer1[0].mac1/mult_14/U58/CO (FADDX1_RVT)                   0.10 *     3.18 r
+  layer1[0].mac1/mult_14/U57/CO (FADDX1_RVT)                   0.10 *     3.28 r
+  layer1[0].mac1/mult_14/U56/CO (FADDX1_RVT)                   0.10 *     3.38 r
+  layer1[0].mac1/mult_14/U55/CO (FADDX1_RVT)                   0.10 *     3.48 r
+  layer1[0].mac1/mult_14/U54/CO (FADDX1_RVT)                   0.10 *     3.58 r
+  layer1[0].mac1/mult_14/U53/CO (FADDX1_RVT)                   0.10 *     3.68 r
+  layer1[0].mac1/mult_14/U52/S (FADDX1_RVT)                    0.16 *     3.84 f
+  layer1[0].mac1/mult_14/product[30] (MAC_DW_mult_tc_1_0)      0.00       3.84 f
+  layer1[0].mac1/add_14/B[30] (MAC_DW01_add_0_0)               0.00       3.84 f
+  layer1[0].mac1/add_14/U1_30/CO (FADDX1_RVT)                  0.09 *     3.93 f
+  layer1[0].mac1/add_14/U1_31/S (FADDX1_RVT)                   0.14 *     4.07 r
+  layer1[0].mac1/add_14/SUM[31] (MAC_DW01_add_0_0)             0.00       4.07 r
+  layer1[0].mac1/acc_reg[31]/D (DFFARX1_RVT)                   0.00 *     4.07 r
+  data arrival time                                                       4.07
+
+  clock clk (rise edge)                                        4.00       4.00
+  clock network delay (propagated)                             0.06       4.06
+  layer1[0].mac1/acc_reg[31]/CLK (DFFARX1_RVT)                 0.00       4.06 r
+  library setup time                                          -0.06       4.01
+  data required time                                                      4.01
+  -------------------------------------------------------------------------------
+  data required time                                                      4.01
+  data arrival time                                                      -4.07
+  -------------------------------------------------------------------------------
+  slack (VIOLATED)                                                       -0.07
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[2].mac1/acc_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                        Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                        0.00       0.00
+  clock network delay (propagated)                             0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                         0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                           0.18       0.24 f
+  ds/data_out[1] (DataShift_WIDTH16)                           0.00       0.24 f
+  U49/Y (NBUFFX8_RVT)                                          0.09 *     0.32 f
+  U50/Y (NBUFFX16_RVT)                                         0.09 *     0.42 f
+  layer1[2].mac1/IN1 (MAC_2)                                   0.00       0.42 f
+  layer1[2].mac1/mult_14/IN1 (MAC_DW_mult_tc_1_2)              0.00       0.42 f
+  layer1[2].mac1/mult_14/U529/Y (XOR2X1_RVT)                   0.13 *     0.55 r
+  layer1[2].mac1/mult_14/U528/Y (NAND2X2_RVT)                  0.12 *     0.67 f
+  layer1[2].mac1/mult_14/U463/Y (OAI22X1_RVT)                  0.11 *     0.78 r
+  layer1[2].mac1/mult_14/U81/C1 (HADDX1_RVT)                   0.07 *     0.85 r
+  layer1[2].mac1/mult_14/U80/CO (FADDX1_RVT)                   0.10 *     0.95 r
+  layer1[2].mac1/mult_14/U79/CO (FADDX1_RVT)                   0.10 *     1.05 r
+  layer1[2].mac1/mult_14/U78/CO (FADDX1_RVT)                   0.10 *     1.15 r
+  layer1[2].mac1/mult_14/U77/CO (FADDX1_RVT)                   0.10 *     1.25 r
+  layer1[2].mac1/mult_14/U76/CO (FADDX1_RVT)                   0.10 *     1.35 r
+  layer1[2].mac1/mult_14/U75/CO (FADDX1_RVT)                   0.10 *     1.45 r
+  layer1[2].mac1/mult_14/U74/CO (FADDX1_RVT)                   0.10 *     1.55 r
+  layer1[2].mac1/mult_14/U73/CO (FADDX1_RVT)                   0.10 *     1.65 r
+  layer1[2].mac1/mult_14/U72/CO (FADDX1_RVT)                   0.10 *     1.75 r
+  layer1[2].mac1/mult_14/U71/CO (FADDX1_RVT)                   0.10 *     1.85 r
+  layer1[2].mac1/mult_14/U70/CO (FADDX1_RVT)                   0.10 *     1.95 r
+  layer1[2].mac1/mult_14/U69/CO (FADDX1_RVT)                   0.10 *     2.05 r
+  layer1[2].mac1/mult_14/U68/CO (FADDX1_RVT)                   0.10 *     2.16 r
+  layer1[2].mac1/mult_14/U67/CO (FADDX1_RVT)                   0.11 *     2.26 r
+  layer1[2].mac1/mult_14/U66/CO (FADDX1_RVT)                   0.11 *     2.37 r
+  layer1[2].mac1/mult_14/U65/CO (FADDX1_RVT)                   0.10 *     2.47 r
+  layer1[2].mac1/mult_14/U64/CO (FADDX1_RVT)                   0.10 *     2.57 r
+  layer1[2].mac1/mult_14/U63/CO (FADDX1_RVT)                   0.10 *     2.67 r
+  layer1[2].mac1/mult_14/U62/CO (FADDX1_RVT)                   0.10 *     2.77 r
+  layer1[2].mac1/mult_14/U61/CO (FADDX1_RVT)                   0.10 *     2.87 r
+  layer1[2].mac1/mult_14/U60/CO (FADDX1_RVT)                   0.10 *     2.97 r
+  layer1[2].mac1/mult_14/U59/CO (FADDX1_RVT)                   0.10 *     3.07 r
+  layer1[2].mac1/mult_14/U58/CO (FADDX1_RVT)                   0.10 *     3.17 r
+  layer1[2].mac1/mult_14/U57/CO (FADDX1_RVT)                   0.10 *     3.27 r
+  layer1[2].mac1/mult_14/U56/CO (FADDX1_RVT)                   0.10 *     3.37 r
+  layer1[2].mac1/mult_14/U55/CO (FADDX1_RVT)                   0.10 *     3.47 r
+  layer1[2].mac1/mult_14/U54/CO (FADDX1_RVT)                   0.10 *     3.57 r
+  layer1[2].mac1/mult_14/U53/CO (FADDX1_RVT)                   0.10 *     3.67 r
+  layer1[2].mac1/mult_14/U52/S (FADDX1_RVT)                    0.16 *     3.83 f
+  layer1[2].mac1/mult_14/product[30] (MAC_DW_mult_tc_1_2)      0.00       3.83 f
+  layer1[2].mac1/add_14/B[30] (MAC_DW01_add_0_2)               0.00       3.83 f
+  layer1[2].mac1/add_14/U1_30/CO (FADDX1_RVT)                  0.09 *     3.92 f
+  layer1[2].mac1/add_14/U1_31/S (FADDX1_RVT)                   0.15 *     4.06 r
+  layer1[2].mac1/add_14/SUM[31] (MAC_DW01_add_0_2)             0.00       4.06 r
+  layer1[2].mac1/acc_reg[31]/D (DFFARX1_RVT)                   0.00 *     4.06 r
+  data arrival time                                                       4.06
+
+  clock clk (rise edge)                                        4.00       4.00
+  clock network delay (propagated)                             0.06       4.06
+  layer1[2].mac1/acc_reg[31]/CLK (DFFARX1_RVT)                 0.00       4.06 r
+  library setup time                                          -0.06       4.00
+  data required time                                                      4.00
+  -------------------------------------------------------------------------------
+  data required time                                                      4.00
+  data arrival time                                                      -4.06
+  -------------------------------------------------------------------------------
+  slack (VIOLATED)                                                       -0.06
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[3].mac1/acc_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.00       0.00
+  clock network delay (propagated)                            0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                        0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                          0.19       0.24 r
+  ds/data_out[1] (DataShift_WIDTH16)                          0.00       0.24 r
+  U49/Y (NBUFFX8_RVT)                                         0.09 *     0.33 r
+  layer1[3].mac1/a[1] (MAC_1)                                 0.00       0.33 r
+  layer1[3].mac1/mult_14/a[1] (MAC_DW_mult_tc_1_1)            0.00       0.33 r
+  layer1[3].mac1/mult_14/U527/Y (XNOR2X1_RVT)                 0.14 *     0.47 r
+  layer1[3].mac1/mult_14/U14/Y (NBUFFX4_RVT)                  0.07 *     0.55 r
+  layer1[3].mac1/mult_14/U525/Y (NAND2X2_RVT)                 0.13 *     0.67 f
+  layer1[3].mac1/mult_14/U426/Y (OAI22X1_RVT)                 0.10 *     0.77 r
+  layer1[3].mac1/mult_14/U187/SO (HADDX1_RVT)                 0.11 *     0.88 f
+  layer1[3].mac1/mult_14/U79/S (FADDX1_RVT)                   0.15 *     1.03 r
+  layer1[3].mac1/mult_14/product[3] (MAC_DW_mult_tc_1_1)      0.00       1.03 r
+  layer1[3].mac1/add_14/B[3] (MAC_DW01_add_0_1)               0.00       1.03 r
+  layer1[3].mac1/add_14/U1_3/CO (FADDX1_RVT)                  0.10 *     1.13 r
+  layer1[3].mac1/add_14/U1_4/CO (FADDX1_RVT)                  0.10 *     1.23 r
+  layer1[3].mac1/add_14/U1_5/CO (FADDX1_RVT)                  0.10 *     1.33 r
+  layer1[3].mac1/add_14/U1_6/CO (FADDX1_RVT)                  0.10 *     1.43 r
+  layer1[3].mac1/add_14/U1_7/CO (FADDX1_RVT)                  0.10 *     1.53 r
+  layer1[3].mac1/add_14/U1_8/CO (FADDX1_RVT)                  0.10 *     1.63 r
+  layer1[3].mac1/add_14/U1_9/CO (FADDX1_RVT)                  0.10 *     1.73 r
+  layer1[3].mac1/add_14/U1_10/CO (FADDX1_RVT)                 0.10 *     1.83 r
+  layer1[3].mac1/add_14/U1_11/CO (FADDX1_RVT)                 0.10 *     1.93 r
+  layer1[3].mac1/add_14/U1_12/CO (FADDX1_RVT)                 0.10 *     2.03 r
+  layer1[3].mac1/add_14/U1_13/CO (FADDX1_RVT)                 0.10 *     2.14 r
+  layer1[3].mac1/add_14/U1_14/CO (FADDX1_RVT)                 0.10 *     2.23 r
+  layer1[3].mac1/add_14/U1_15/CO (FADDX1_RVT)                 0.12 *     2.36 r
+  layer1[3].mac1/add_14/U1_16/CO (FADDX1_RVT)                 0.11 *     2.46 r
+  layer1[3].mac1/add_14/U1_17/CO (FADDX1_RVT)                 0.11 *     2.57 r
+  layer1[3].mac1/add_14/U1_18/CO (FADDX1_RVT)                 0.10 *     2.67 r
+  layer1[3].mac1/add_14/U1_19/CO (FADDX1_RVT)                 0.11 *     2.79 r
+  layer1[3].mac1/add_14/U1_20/CO (FADDX1_RVT)                 0.11 *     2.90 r
+  layer1[3].mac1/add_14/U1_21/CO (FADDX1_RVT)                 0.10 *     3.00 r
+  layer1[3].mac1/add_14/U1_22/CO (FADDX1_RVT)                 0.10 *     3.10 r
+  layer1[3].mac1/add_14/U1_23/CO (FADDX1_RVT)                 0.10 *     3.20 r
+  layer1[3].mac1/add_14/U1_24/CO (FADDX1_RVT)                 0.10 *     3.30 r
+  layer1[3].mac1/add_14/U1_25/CO (FADDX1_RVT)                 0.10 *     3.40 r
+  layer1[3].mac1/add_14/U1_26/CO (FADDX1_RVT)                 0.10 *     3.50 r
+  layer1[3].mac1/add_14/U1_27/CO (FADDX1_RVT)                 0.10 *     3.60 r
+  layer1[3].mac1/add_14/U1_28/CO (FADDX1_RVT)                 0.10 *     3.71 r
+  layer1[3].mac1/add_14/U1_29/CO (FADDX1_RVT)                 0.10 *     3.81 r
+  layer1[3].mac1/add_14/U1_30/CO (FADDX1_RVT)                 0.10 *     3.91 r
+  layer1[3].mac1/add_14/U1_31/S (FADDX1_RVT)                  0.15 *     4.06 f
+  layer1[3].mac1/add_14/SUM[31] (MAC_DW01_add_0_1)            0.00       4.06 f
+  layer1[3].mac1/acc_reg[31]/D (DFFARX1_RVT)                  0.00 *     4.06 f
+  data arrival time                                                      4.06
+
+  clock clk (rise edge)                                       4.00       4.00
+  clock network delay (propagated)                            0.06       4.06
+  layer1[3].mac1/acc_reg[31]/CLK (DFFARX1_RVT)                0.00       4.06 r
+  library setup time                                         -0.04       4.02
+  data required time                                                     4.02
+  ------------------------------------------------------------------------------
+  data required time                                                     4.02
+  data arrival time                                                     -4.06
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                      -0.04
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[1].mac1/acc_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                      Incr       Path
+  -----------------------------------------------------------------------------
+  clock clk (rise edge)                                      0.00       0.00
+  clock network delay (propagated)                           0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                       0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                         0.19       0.24 r
+  ds/data_out[1] (DataShift_WIDTH16)                         0.00       0.24 r
+  U49/Y (NBUFFX8_RVT)                                        0.09 *     0.33 r
+  U50/Y (NBUFFX16_RVT)                                       0.09 *     0.42 r
+  layer1[1].mac1/IN1 (MAC)                                   0.00       0.42 r
+  layer1[1].mac1/mult_14/IN1 (MAC_DW_mult_tc_1)              0.00       0.42 r
+  layer1[1].mac1/mult_14/U527/Y (XNOR2X1_RVT)                0.12 *     0.54 f
+  layer1[1].mac1/mult_14/U7/Y (NBUFFX4_RVT)                  0.07 *     0.62 f
+  layer1[1].mac1/mult_14/U525/Y (NAND2X2_RVT)                0.13 *     0.75 r
+  layer1[1].mac1/mult_14/U426/Y (OAI22X1_RVT)                0.09 *     0.83 f
+  layer1[1].mac1/mult_14/U187/SO (HADDX1_RVT)                0.11 *     0.94 r
+  layer1[1].mac1/mult_14/U79/CO (FADDX1_RVT)                 0.10 *     1.04 r
+  layer1[1].mac1/mult_14/U78/CO (FADDX1_RVT)                 0.10 *     1.15 r
+  layer1[1].mac1/mult_14/U77/CO (FADDX1_RVT)                 0.10 *     1.25 r
+  layer1[1].mac1/mult_14/U76/CO (FADDX1_RVT)                 0.11 *     1.36 r
+  layer1[1].mac1/mult_14/U75/CO (FADDX1_RVT)                 0.10 *     1.46 r
+  layer1[1].mac1/mult_14/U74/CO (FADDX1_RVT)                 0.10 *     1.57 r
+  layer1[1].mac1/mult_14/U73/CO (FADDX1_RVT)                 0.10 *     1.67 r
+  layer1[1].mac1/mult_14/U72/CO (FADDX1_RVT)                 0.10 *     1.77 r
+  layer1[1].mac1/mult_14/U71/CO (FADDX1_RVT)                 0.10 *     1.87 r
+  layer1[1].mac1/mult_14/U70/CO (FADDX1_RVT)                 0.10 *     1.97 r
+  layer1[1].mac1/mult_14/U69/CO (FADDX1_RVT)                 0.10 *     2.07 r
+  layer1[1].mac1/mult_14/U68/CO (FADDX1_RVT)                 0.10 *     2.17 r
+  layer1[1].mac1/mult_14/U67/CO (FADDX1_RVT)                 0.10 *     2.27 r
+  layer1[1].mac1/mult_14/U66/CO (FADDX1_RVT)                 0.10 *     2.37 r
+  layer1[1].mac1/mult_14/U65/CO (FADDX1_RVT)                 0.10 *     2.48 r
+  layer1[1].mac1/mult_14/U64/CO (FADDX1_RVT)                 0.10 *     2.58 r
+  layer1[1].mac1/mult_14/U63/CO (FADDX1_RVT)                 0.10 *     2.68 r
+  layer1[1].mac1/mult_14/U62/CO (FADDX1_RVT)                 0.10 *     2.79 r
+  layer1[1].mac1/mult_14/U61/CO (FADDX1_RVT)                 0.10 *     2.89 r
+  layer1[1].mac1/mult_14/U60/CO (FADDX1_RVT)                 0.11 *     2.99 r
+  layer1[1].mac1/mult_14/U59/CO (FADDX1_RVT)                 0.10 *     3.10 r
+  layer1[1].mac1/mult_14/U58/CO (FADDX1_RVT)                 0.10 *     3.20 r
+  layer1[1].mac1/mult_14/U57/CO (FADDX1_RVT)                 0.10 *     3.30 r
+  layer1[1].mac1/mult_14/U56/CO (FADDX1_RVT)                 0.10 *     3.39 r
+  layer1[1].mac1/mult_14/U55/CO (FADDX1_RVT)                 0.10 *     3.49 r
+  layer1[1].mac1/mult_14/U54/CO (FADDX1_RVT)                 0.10 *     3.59 r
+  layer1[1].mac1/mult_14/U53/CO (FADDX1_RVT)                 0.10 *     3.69 r
+  layer1[1].mac1/mult_14/U52/S (FADDX1_RVT)                  0.16 *     3.85 f
+  layer1[1].mac1/mult_14/product[30] (MAC_DW_mult_tc_1)      0.00       3.85 f
+  layer1[1].mac1/add_14/B[30] (MAC_DW01_add_0)               0.00       3.85 f
+  layer1[1].mac1/add_14/U1_30/S (FADDX1_RVT)                 0.14 *     4.00 r
+  layer1[1].mac1/add_14/SUM[30] (MAC_DW01_add_0)             0.00       4.00 r
+  layer1[1].mac1/acc_reg[30]/D (DFFARX1_RVT)                 0.00 *     4.00 r
+  data arrival time                                                     4.00
+
+  clock clk (rise edge)                                      4.00       4.00
+  clock network delay (propagated)                           0.06       4.06
+  layer1[1].mac1/acc_reg[30]/CLK (DFFARX1_RVT)               0.00       4.06 r
+  library setup time                                        -0.06       4.00
+  data required time                                                    4.00
+  -----------------------------------------------------------------------------
+  data required time                                                    4.00
+  data arrival time                                                    -4.00
+  -----------------------------------------------------------------------------
+  slack (MET)                                                           0.01
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[0].mac1/acc_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                        Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                        0.00       0.00
+  clock network delay (propagated)                             0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                         0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                           0.19       0.24 r
+  ds/data_out[1] (DataShift_WIDTH16)                           0.00       0.24 r
+  U49/Y (NBUFFX8_RVT)                                          0.09 *     0.33 r
+  U50/Y (NBUFFX16_RVT)                                         0.09 *     0.42 r
+  layer1[0].mac1/IN3 (MAC_0)                                   0.00       0.42 r
+  layer1[0].mac1/mult_14/IN3 (MAC_DW_mult_tc_1_0)              0.00       0.42 r
+  layer1[0].mac1/mult_14/U527/Y (XNOR2X1_RVT)                  0.12 *     0.54 f
+  layer1[0].mac1/mult_14/U9/Y (NBUFFX4_RVT)                    0.07 *     0.62 f
+  layer1[0].mac1/mult_14/U525/Y (NAND2X2_RVT)                  0.13 *     0.75 r
+  layer1[0].mac1/mult_14/U426/Y (OAI22X1_RVT)                  0.09 *     0.84 f
+  layer1[0].mac1/mult_14/U187/SO (HADDX1_RVT)                  0.11 *     0.95 r
+  layer1[0].mac1/mult_14/U79/CO (FADDX1_RVT)                   0.10 *     1.05 r
+  layer1[0].mac1/mult_14/U78/CO (FADDX1_RVT)                   0.10 *     1.15 r
+  layer1[0].mac1/mult_14/U77/CO (FADDX1_RVT)                   0.10 *     1.25 r
+  layer1[0].mac1/mult_14/U76/CO (FADDX1_RVT)                   0.10 *     1.35 r
+  layer1[0].mac1/mult_14/U75/CO (FADDX1_RVT)                   0.10 *     1.45 r
+  layer1[0].mac1/mult_14/U74/CO (FADDX1_RVT)                   0.10 *     1.55 r
+  layer1[0].mac1/mult_14/U73/CO (FADDX1_RVT)                   0.10 *     1.65 r
+  layer1[0].mac1/mult_14/U72/CO (FADDX1_RVT)                   0.10 *     1.76 r
+  layer1[0].mac1/mult_14/U71/CO (FADDX1_RVT)                   0.10 *     1.86 r
+  layer1[0].mac1/mult_14/U70/CO (FADDX1_RVT)                   0.10 *     1.96 r
+  layer1[0].mac1/mult_14/U69/CO (FADDX1_RVT)                   0.10 *     2.06 r
+  layer1[0].mac1/mult_14/U68/CO (FADDX1_RVT)                   0.10 *     2.16 r
+  layer1[0].mac1/mult_14/U67/CO (FADDX1_RVT)                   0.10 *     2.26 r
+  layer1[0].mac1/mult_14/U66/CO (FADDX1_RVT)                   0.10 *     2.37 r
+  layer1[0].mac1/mult_14/U65/CO (FADDX1_RVT)                   0.10 *     2.47 r
+  layer1[0].mac1/mult_14/U64/CO (FADDX1_RVT)                   0.10 *     2.57 r
+  layer1[0].mac1/mult_14/U63/CO (FADDX1_RVT)                   0.10 *     2.67 r
+  layer1[0].mac1/mult_14/U62/CO (FADDX1_RVT)                   0.10 *     2.77 r
+  layer1[0].mac1/mult_14/U61/CO (FADDX1_RVT)                   0.10 *     2.87 r
+  layer1[0].mac1/mult_14/U60/CO (FADDX1_RVT)                   0.10 *     2.98 r
+  layer1[0].mac1/mult_14/U59/CO (FADDX1_RVT)                   0.10 *     3.08 r
+  layer1[0].mac1/mult_14/U58/CO (FADDX1_RVT)                   0.10 *     3.18 r
+  layer1[0].mac1/mult_14/U57/CO (FADDX1_RVT)                   0.10 *     3.28 r
+  layer1[0].mac1/mult_14/U56/CO (FADDX1_RVT)                   0.10 *     3.38 r
+  layer1[0].mac1/mult_14/U55/CO (FADDX1_RVT)                   0.10 *     3.48 r
+  layer1[0].mac1/mult_14/U54/CO (FADDX1_RVT)                   0.10 *     3.58 r
+  layer1[0].mac1/mult_14/U53/CO (FADDX1_RVT)                   0.10 *     3.68 r
+  layer1[0].mac1/mult_14/U52/S (FADDX1_RVT)                    0.16 *     3.84 f
+  layer1[0].mac1/mult_14/product[30] (MAC_DW_mult_tc_1_0)      0.00       3.84 f
+  layer1[0].mac1/add_14/B[30] (MAC_DW01_add_0_0)               0.00       3.84 f
+  layer1[0].mac1/add_14/U1_30/S (FADDX1_RVT)                   0.14 *     3.98 r
+  layer1[0].mac1/add_14/SUM[30] (MAC_DW01_add_0_0)             0.00       3.98 r
+  layer1[0].mac1/acc_reg[30]/D (DFFARX1_RVT)                   0.00 *     3.98 r
+  data arrival time                                                       3.98
+
+  clock clk (rise edge)                                        4.00       4.00
+  clock network delay (propagated)                             0.06       4.06
+  layer1[0].mac1/acc_reg[30]/CLK (DFFARX1_RVT)                 0.00       4.06 r
+  library setup time                                          -0.06       4.00
+  data required time                                                      4.00
+  -------------------------------------------------------------------------------
+  data required time                                                      4.00
+  data arrival time                                                      -3.98
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.02
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[2].mac1/acc_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                        Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                        0.00       0.00
+  clock network delay (propagated)                             0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                         0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                           0.18       0.24 f
+  ds/data_out[1] (DataShift_WIDTH16)                           0.00       0.24 f
+  U49/Y (NBUFFX8_RVT)                                          0.09 *     0.32 f
+  U50/Y (NBUFFX16_RVT)                                         0.09 *     0.42 f
+  layer1[2].mac1/IN1 (MAC_2)                                   0.00       0.42 f
+  layer1[2].mac1/mult_14/IN1 (MAC_DW_mult_tc_1_2)              0.00       0.42 f
+  layer1[2].mac1/mult_14/U529/Y (XOR2X1_RVT)                   0.13 *     0.55 r
+  layer1[2].mac1/mult_14/U528/Y (NAND2X2_RVT)                  0.12 *     0.67 f
+  layer1[2].mac1/mult_14/U463/Y (OAI22X1_RVT)                  0.11 *     0.78 r
+  layer1[2].mac1/mult_14/U81/C1 (HADDX1_RVT)                   0.07 *     0.85 r
+  layer1[2].mac1/mult_14/U80/CO (FADDX1_RVT)                   0.10 *     0.95 r
+  layer1[2].mac1/mult_14/U79/CO (FADDX1_RVT)                   0.10 *     1.05 r
+  layer1[2].mac1/mult_14/U78/CO (FADDX1_RVT)                   0.10 *     1.15 r
+  layer1[2].mac1/mult_14/U77/CO (FADDX1_RVT)                   0.10 *     1.25 r
+  layer1[2].mac1/mult_14/U76/CO (FADDX1_RVT)                   0.10 *     1.35 r
+  layer1[2].mac1/mult_14/U75/CO (FADDX1_RVT)                   0.10 *     1.45 r
+  layer1[2].mac1/mult_14/U74/CO (FADDX1_RVT)                   0.10 *     1.55 r
+  layer1[2].mac1/mult_14/U73/CO (FADDX1_RVT)                   0.10 *     1.65 r
+  layer1[2].mac1/mult_14/U72/CO (FADDX1_RVT)                   0.10 *     1.75 r
+  layer1[2].mac1/mult_14/U71/CO (FADDX1_RVT)                   0.10 *     1.85 r
+  layer1[2].mac1/mult_14/U70/CO (FADDX1_RVT)                   0.10 *     1.95 r
+  layer1[2].mac1/mult_14/U69/CO (FADDX1_RVT)                   0.10 *     2.05 r
+  layer1[2].mac1/mult_14/U68/CO (FADDX1_RVT)                   0.10 *     2.16 r
+  layer1[2].mac1/mult_14/U67/CO (FADDX1_RVT)                   0.11 *     2.26 r
+  layer1[2].mac1/mult_14/U66/CO (FADDX1_RVT)                   0.11 *     2.37 r
+  layer1[2].mac1/mult_14/U65/CO (FADDX1_RVT)                   0.10 *     2.47 r
+  layer1[2].mac1/mult_14/U64/CO (FADDX1_RVT)                   0.10 *     2.57 r
+  layer1[2].mac1/mult_14/U63/CO (FADDX1_RVT)                   0.10 *     2.67 r
+  layer1[2].mac1/mult_14/U62/CO (FADDX1_RVT)                   0.10 *     2.77 r
+  layer1[2].mac1/mult_14/U61/CO (FADDX1_RVT)                   0.10 *     2.87 r
+  layer1[2].mac1/mult_14/U60/CO (FADDX1_RVT)                   0.10 *     2.97 r
+  layer1[2].mac1/mult_14/U59/CO (FADDX1_RVT)                   0.10 *     3.07 r
+  layer1[2].mac1/mult_14/U58/CO (FADDX1_RVT)                   0.10 *     3.17 r
+  layer1[2].mac1/mult_14/U57/CO (FADDX1_RVT)                   0.10 *     3.27 r
+  layer1[2].mac1/mult_14/U56/CO (FADDX1_RVT)                   0.10 *     3.37 r
+  layer1[2].mac1/mult_14/U55/CO (FADDX1_RVT)                   0.10 *     3.47 r
+  layer1[2].mac1/mult_14/U54/CO (FADDX1_RVT)                   0.10 *     3.57 r
+  layer1[2].mac1/mult_14/U53/CO (FADDX1_RVT)                   0.10 *     3.67 r
+  layer1[2].mac1/mult_14/U52/S (FADDX1_RVT)                    0.16 *     3.83 f
+  layer1[2].mac1/mult_14/product[30] (MAC_DW_mult_tc_1_2)      0.00       3.83 f
+  layer1[2].mac1/add_14/B[30] (MAC_DW01_add_0_2)               0.00       3.83 f
+  layer1[2].mac1/add_14/U1_30/S (FADDX1_RVT)                   0.14 *     3.97 r
+  layer1[2].mac1/add_14/SUM[30] (MAC_DW01_add_0_2)             0.00       3.97 r
+  layer1[2].mac1/acc_reg[30]/D (DFFARX1_RVT)                   0.00 *     3.97 r
+  data arrival time                                                       3.97
+
+  clock clk (rise edge)                                        4.00       4.00
+  clock network delay (propagated)                             0.06       4.06
+  layer1[2].mac1/acc_reg[30]/CLK (DFFARX1_RVT)                 0.00       4.06 r
+  library setup time                                          -0.06       4.00
+  data required time                                                      4.00
+  -------------------------------------------------------------------------------
+  data required time                                                      4.00
+  data arrival time                                                      -3.97
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.03
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[3].mac1/acc_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.00       0.00
+  clock network delay (propagated)                            0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                        0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                          0.19       0.24 r
+  ds/data_out[1] (DataShift_WIDTH16)                          0.00       0.24 r
+  U49/Y (NBUFFX8_RVT)                                         0.09 *     0.33 r
+  layer1[3].mac1/a[1] (MAC_1)                                 0.00       0.33 r
+  layer1[3].mac1/mult_14/a[1] (MAC_DW_mult_tc_1_1)            0.00       0.33 r
+  layer1[3].mac1/mult_14/U527/Y (XNOR2X1_RVT)                 0.14 *     0.47 r
+  layer1[3].mac1/mult_14/U14/Y (NBUFFX4_RVT)                  0.07 *     0.55 r
+  layer1[3].mac1/mult_14/U525/Y (NAND2X2_RVT)                 0.13 *     0.67 f
+  layer1[3].mac1/mult_14/U426/Y (OAI22X1_RVT)                 0.10 *     0.77 r
+  layer1[3].mac1/mult_14/U187/SO (HADDX1_RVT)                 0.11 *     0.88 f
+  layer1[3].mac1/mult_14/U79/S (FADDX1_RVT)                   0.15 *     1.03 r
+  layer1[3].mac1/mult_14/product[3] (MAC_DW_mult_tc_1_1)      0.00       1.03 r
+  layer1[3].mac1/add_14/B[3] (MAC_DW01_add_0_1)               0.00       1.03 r
+  layer1[3].mac1/add_14/U1_3/CO (FADDX1_RVT)                  0.10 *     1.13 r
+  layer1[3].mac1/add_14/U1_4/CO (FADDX1_RVT)                  0.10 *     1.23 r
+  layer1[3].mac1/add_14/U1_5/CO (FADDX1_RVT)                  0.10 *     1.33 r
+  layer1[3].mac1/add_14/U1_6/CO (FADDX1_RVT)                  0.10 *     1.43 r
+  layer1[3].mac1/add_14/U1_7/CO (FADDX1_RVT)                  0.10 *     1.53 r
+  layer1[3].mac1/add_14/U1_8/CO (FADDX1_RVT)                  0.10 *     1.63 r
+  layer1[3].mac1/add_14/U1_9/CO (FADDX1_RVT)                  0.10 *     1.73 r
+  layer1[3].mac1/add_14/U1_10/CO (FADDX1_RVT)                 0.10 *     1.83 r
+  layer1[3].mac1/add_14/U1_11/CO (FADDX1_RVT)                 0.10 *     1.93 r
+  layer1[3].mac1/add_14/U1_12/CO (FADDX1_RVT)                 0.10 *     2.03 r
+  layer1[3].mac1/add_14/U1_13/CO (FADDX1_RVT)                 0.10 *     2.14 r
+  layer1[3].mac1/add_14/U1_14/CO (FADDX1_RVT)                 0.10 *     2.23 r
+  layer1[3].mac1/add_14/U1_15/CO (FADDX1_RVT)                 0.12 *     2.36 r
+  layer1[3].mac1/add_14/U1_16/CO (FADDX1_RVT)                 0.11 *     2.46 r
+  layer1[3].mac1/add_14/U1_17/CO (FADDX1_RVT)                 0.11 *     2.57 r
+  layer1[3].mac1/add_14/U1_18/CO (FADDX1_RVT)                 0.10 *     2.67 r
+  layer1[3].mac1/add_14/U1_19/CO (FADDX1_RVT)                 0.11 *     2.79 r
+  layer1[3].mac1/add_14/U1_20/CO (FADDX1_RVT)                 0.11 *     2.90 r
+  layer1[3].mac1/add_14/U1_21/CO (FADDX1_RVT)                 0.10 *     3.00 r
+  layer1[3].mac1/add_14/U1_22/CO (FADDX1_RVT)                 0.10 *     3.10 r
+  layer1[3].mac1/add_14/U1_23/CO (FADDX1_RVT)                 0.10 *     3.20 r
+  layer1[3].mac1/add_14/U1_24/CO (FADDX1_RVT)                 0.10 *     3.30 r
+  layer1[3].mac1/add_14/U1_25/CO (FADDX1_RVT)                 0.10 *     3.40 r
+  layer1[3].mac1/add_14/U1_26/CO (FADDX1_RVT)                 0.10 *     3.50 r
+  layer1[3].mac1/add_14/U1_27/CO (FADDX1_RVT)                 0.10 *     3.60 r
+  layer1[3].mac1/add_14/U1_28/CO (FADDX1_RVT)                 0.10 *     3.71 r
+  layer1[3].mac1/add_14/U1_29/CO (FADDX1_RVT)                 0.10 *     3.81 r
+  layer1[3].mac1/add_14/U1_30/S (FADDX1_RVT)                  0.15 *     3.96 f
+  layer1[3].mac1/add_14/SUM[30] (MAC_DW01_add_0_1)            0.00       3.96 f
+  layer1[3].mac1/acc_reg[30]/D (DFFARX1_RVT)                  0.00 *     3.96 f
+  data arrival time                                                      3.96
+
+  clock clk (rise edge)                                       4.00       4.00
+  clock network delay (propagated)                            0.06       4.06
+  layer1[3].mac1/acc_reg[30]/CLK (DFFARX1_RVT)                0.00       4.06 r
+  library setup time                                         -0.04       4.02
+  data required time                                                     4.02
+  ------------------------------------------------------------------------------
+  data required time                                                     4.02
+  data arrival time                                                     -3.96
+  ------------------------------------------------------------------------------
+  slack (MET)                                                            0.06
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[1].mac1/acc_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                      Incr       Path
+  -----------------------------------------------------------------------------
+  clock clk (rise edge)                                      0.00       0.00
+  clock network delay (propagated)                           0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                       0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                         0.19       0.24 r
+  ds/data_out[1] (DataShift_WIDTH16)                         0.00       0.24 r
+  U49/Y (NBUFFX8_RVT)                                        0.09 *     0.33 r
+  U50/Y (NBUFFX16_RVT)                                       0.09 *     0.42 r
+  layer1[1].mac1/IN1 (MAC)                                   0.00       0.42 r
+  layer1[1].mac1/mult_14/IN1 (MAC_DW_mult_tc_1)              0.00       0.42 r
+  layer1[1].mac1/mult_14/U527/Y (XNOR2X1_RVT)                0.12 *     0.54 f
+  layer1[1].mac1/mult_14/U7/Y (NBUFFX4_RVT)                  0.07 *     0.62 f
+  layer1[1].mac1/mult_14/U525/Y (NAND2X2_RVT)                0.13 *     0.75 r
+  layer1[1].mac1/mult_14/U426/Y (OAI22X1_RVT)                0.09 *     0.83 f
+  layer1[1].mac1/mult_14/U187/SO (HADDX1_RVT)                0.11 *     0.94 r
+  layer1[1].mac1/mult_14/U79/CO (FADDX1_RVT)                 0.10 *     1.04 r
+  layer1[1].mac1/mult_14/U78/CO (FADDX1_RVT)                 0.10 *     1.15 r
+  layer1[1].mac1/mult_14/U77/CO (FADDX1_RVT)                 0.10 *     1.25 r
+  layer1[1].mac1/mult_14/U76/CO (FADDX1_RVT)                 0.11 *     1.36 r
+  layer1[1].mac1/mult_14/U75/CO (FADDX1_RVT)                 0.10 *     1.46 r
+  layer1[1].mac1/mult_14/U74/CO (FADDX1_RVT)                 0.10 *     1.57 r
+  layer1[1].mac1/mult_14/U73/CO (FADDX1_RVT)                 0.10 *     1.67 r
+  layer1[1].mac1/mult_14/U72/CO (FADDX1_RVT)                 0.10 *     1.77 r
+  layer1[1].mac1/mult_14/U71/CO (FADDX1_RVT)                 0.10 *     1.87 r
+  layer1[1].mac1/mult_14/U70/CO (FADDX1_RVT)                 0.10 *     1.97 r
+  layer1[1].mac1/mult_14/U69/CO (FADDX1_RVT)                 0.10 *     2.07 r
+  layer1[1].mac1/mult_14/U68/CO (FADDX1_RVT)                 0.10 *     2.17 r
+  layer1[1].mac1/mult_14/U67/CO (FADDX1_RVT)                 0.10 *     2.27 r
+  layer1[1].mac1/mult_14/U66/CO (FADDX1_RVT)                 0.10 *     2.37 r
+  layer1[1].mac1/mult_14/U65/CO (FADDX1_RVT)                 0.10 *     2.48 r
+  layer1[1].mac1/mult_14/U64/CO (FADDX1_RVT)                 0.10 *     2.58 r
+  layer1[1].mac1/mult_14/U63/CO (FADDX1_RVT)                 0.10 *     2.68 r
+  layer1[1].mac1/mult_14/U62/CO (FADDX1_RVT)                 0.10 *     2.79 r
+  layer1[1].mac1/mult_14/U61/CO (FADDX1_RVT)                 0.10 *     2.89 r
+  layer1[1].mac1/mult_14/U60/CO (FADDX1_RVT)                 0.11 *     2.99 r
+  layer1[1].mac1/mult_14/U59/CO (FADDX1_RVT)                 0.10 *     3.10 r
+  layer1[1].mac1/mult_14/U58/CO (FADDX1_RVT)                 0.10 *     3.20 r
+  layer1[1].mac1/mult_14/U57/CO (FADDX1_RVT)                 0.10 *     3.30 r
+  layer1[1].mac1/mult_14/U56/CO (FADDX1_RVT)                 0.10 *     3.39 r
+  layer1[1].mac1/mult_14/U55/CO (FADDX1_RVT)                 0.10 *     3.49 r
+  layer1[1].mac1/mult_14/U54/CO (FADDX1_RVT)                 0.10 *     3.59 r
+  layer1[1].mac1/mult_14/U53/S (FADDX1_RVT)                  0.16 *     3.75 f
+  layer1[1].mac1/mult_14/product[29] (MAC_DW_mult_tc_1)      0.00       3.75 f
+  layer1[1].mac1/add_14/B[29] (MAC_DW01_add_0)               0.00       3.75 f
+  layer1[1].mac1/add_14/U1_29/S (FADDX1_RVT)                 0.14 *     3.89 r
+  layer1[1].mac1/add_14/SUM[29] (MAC_DW01_add_0)             0.00       3.89 r
+  layer1[1].mac1/acc_reg[29]/D (DFFARX1_RVT)                 0.00 *     3.89 r
+  data arrival time                                                     3.89
+
+  clock clk (rise edge)                                      4.00       4.00
+  clock network delay (propagated)                           0.06       4.06
+  layer1[1].mac1/acc_reg[29]/CLK (DFFARX1_RVT)               0.00       4.06 r
+  library setup time                                        -0.06       4.00
+  data required time                                                    4.00
+  -----------------------------------------------------------------------------
+  data required time                                                    4.00
+  data arrival time                                                    -3.89
+  -----------------------------------------------------------------------------
+  slack (MET)                                                           0.11
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[0].mac1/acc_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                        Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                        0.00       0.00
+  clock network delay (propagated)                             0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                         0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                           0.19       0.24 r
+  ds/data_out[1] (DataShift_WIDTH16)                           0.00       0.24 r
+  U49/Y (NBUFFX8_RVT)                                          0.09 *     0.33 r
+  U50/Y (NBUFFX16_RVT)                                         0.09 *     0.42 r
+  layer1[0].mac1/IN3 (MAC_0)                                   0.00       0.42 r
+  layer1[0].mac1/mult_14/IN3 (MAC_DW_mult_tc_1_0)              0.00       0.42 r
+  layer1[0].mac1/mult_14/U527/Y (XNOR2X1_RVT)                  0.12 *     0.54 f
+  layer1[0].mac1/mult_14/U9/Y (NBUFFX4_RVT)                    0.07 *     0.62 f
+  layer1[0].mac1/mult_14/U525/Y (NAND2X2_RVT)                  0.13 *     0.75 r
+  layer1[0].mac1/mult_14/U426/Y (OAI22X1_RVT)                  0.09 *     0.84 f
+  layer1[0].mac1/mult_14/U187/SO (HADDX1_RVT)                  0.11 *     0.95 r
+  layer1[0].mac1/mult_14/U79/CO (FADDX1_RVT)                   0.10 *     1.05 r
+  layer1[0].mac1/mult_14/U78/CO (FADDX1_RVT)                   0.10 *     1.15 r
+  layer1[0].mac1/mult_14/U77/CO (FADDX1_RVT)                   0.10 *     1.25 r
+  layer1[0].mac1/mult_14/U76/CO (FADDX1_RVT)                   0.10 *     1.35 r
+  layer1[0].mac1/mult_14/U75/CO (FADDX1_RVT)                   0.10 *     1.45 r
+  layer1[0].mac1/mult_14/U74/CO (FADDX1_RVT)                   0.10 *     1.55 r
+  layer1[0].mac1/mult_14/U73/CO (FADDX1_RVT)                   0.10 *     1.65 r
+  layer1[0].mac1/mult_14/U72/CO (FADDX1_RVT)                   0.10 *     1.76 r
+  layer1[0].mac1/mult_14/U71/CO (FADDX1_RVT)                   0.10 *     1.86 r
+  layer1[0].mac1/mult_14/U70/CO (FADDX1_RVT)                   0.10 *     1.96 r
+  layer1[0].mac1/mult_14/U69/CO (FADDX1_RVT)                   0.10 *     2.06 r
+  layer1[0].mac1/mult_14/U68/CO (FADDX1_RVT)                   0.10 *     2.16 r
+  layer1[0].mac1/mult_14/U67/CO (FADDX1_RVT)                   0.10 *     2.26 r
+  layer1[0].mac1/mult_14/U66/CO (FADDX1_RVT)                   0.10 *     2.37 r
+  layer1[0].mac1/mult_14/U65/CO (FADDX1_RVT)                   0.10 *     2.47 r
+  layer1[0].mac1/mult_14/U64/CO (FADDX1_RVT)                   0.10 *     2.57 r
+  layer1[0].mac1/mult_14/U63/CO (FADDX1_RVT)                   0.10 *     2.67 r
+  layer1[0].mac1/mult_14/U62/CO (FADDX1_RVT)                   0.10 *     2.77 r
+  layer1[0].mac1/mult_14/U61/CO (FADDX1_RVT)                   0.10 *     2.87 r
+  layer1[0].mac1/mult_14/U60/CO (FADDX1_RVT)                   0.10 *     2.98 r
+  layer1[0].mac1/mult_14/U59/CO (FADDX1_RVT)                   0.10 *     3.08 r
+  layer1[0].mac1/mult_14/U58/CO (FADDX1_RVT)                   0.10 *     3.18 r
+  layer1[0].mac1/mult_14/U57/CO (FADDX1_RVT)                   0.10 *     3.28 r
+  layer1[0].mac1/mult_14/U56/CO (FADDX1_RVT)                   0.10 *     3.38 r
+  layer1[0].mac1/mult_14/U55/CO (FADDX1_RVT)                   0.10 *     3.48 r
+  layer1[0].mac1/mult_14/U54/CO (FADDX1_RVT)                   0.10 *     3.58 r
+  layer1[0].mac1/mult_14/U53/S (FADDX1_RVT)                    0.16 *     3.74 f
+  layer1[0].mac1/mult_14/product[29] (MAC_DW_mult_tc_1_0)      0.00       3.74 f
+  layer1[0].mac1/add_14/B[29] (MAC_DW01_add_0_0)               0.00       3.74 f
+  layer1[0].mac1/add_14/U1_29/S (FADDX1_RVT)                   0.14 *     3.88 r
+  layer1[0].mac1/add_14/SUM[29] (MAC_DW01_add_0_0)             0.00       3.88 r
+  layer1[0].mac1/acc_reg[29]/D (DFFARX1_RVT)                   0.00 *     3.88 r
+  data arrival time                                                       3.88
+
+  clock clk (rise edge)                                        4.00       4.00
+  clock network delay (propagated)                             0.06       4.06
+  layer1[0].mac1/acc_reg[29]/CLK (DFFARX1_RVT)                 0.00       4.06 r
+  library setup time                                          -0.06       4.00
+  data required time                                                      4.00
+  -------------------------------------------------------------------------------
+  data required time                                                      4.00
+  data arrival time                                                      -3.88
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.12
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[2].mac1/acc_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                        Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                        0.00       0.00
+  clock network delay (propagated)                             0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                         0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                           0.18       0.24 f
+  ds/data_out[1] (DataShift_WIDTH16)                           0.00       0.24 f
+  U49/Y (NBUFFX8_RVT)                                          0.09 *     0.32 f
+  U50/Y (NBUFFX16_RVT)                                         0.09 *     0.42 f
+  layer1[2].mac1/IN1 (MAC_2)                                   0.00       0.42 f
+  layer1[2].mac1/mult_14/IN1 (MAC_DW_mult_tc_1_2)              0.00       0.42 f
+  layer1[2].mac1/mult_14/U529/Y (XOR2X1_RVT)                   0.13 *     0.55 r
+  layer1[2].mac1/mult_14/U528/Y (NAND2X2_RVT)                  0.12 *     0.67 f
+  layer1[2].mac1/mult_14/U463/Y (OAI22X1_RVT)                  0.11 *     0.78 r
+  layer1[2].mac1/mult_14/U81/C1 (HADDX1_RVT)                   0.07 *     0.85 r
+  layer1[2].mac1/mult_14/U80/CO (FADDX1_RVT)                   0.10 *     0.95 r
+  layer1[2].mac1/mult_14/U79/CO (FADDX1_RVT)                   0.10 *     1.05 r
+  layer1[2].mac1/mult_14/U78/CO (FADDX1_RVT)                   0.10 *     1.15 r
+  layer1[2].mac1/mult_14/U77/CO (FADDX1_RVT)                   0.10 *     1.25 r
+  layer1[2].mac1/mult_14/U76/CO (FADDX1_RVT)                   0.10 *     1.35 r
+  layer1[2].mac1/mult_14/U75/CO (FADDX1_RVT)                   0.10 *     1.45 r
+  layer1[2].mac1/mult_14/U74/CO (FADDX1_RVT)                   0.10 *     1.55 r
+  layer1[2].mac1/mult_14/U73/CO (FADDX1_RVT)                   0.10 *     1.65 r
+  layer1[2].mac1/mult_14/U72/CO (FADDX1_RVT)                   0.10 *     1.75 r
+  layer1[2].mac1/mult_14/U71/CO (FADDX1_RVT)                   0.10 *     1.85 r
+  layer1[2].mac1/mult_14/U70/CO (FADDX1_RVT)                   0.10 *     1.95 r
+  layer1[2].mac1/mult_14/U69/CO (FADDX1_RVT)                   0.10 *     2.05 r
+  layer1[2].mac1/mult_14/U68/CO (FADDX1_RVT)                   0.10 *     2.16 r
+  layer1[2].mac1/mult_14/U67/CO (FADDX1_RVT)                   0.11 *     2.26 r
+  layer1[2].mac1/mult_14/U66/CO (FADDX1_RVT)                   0.11 *     2.37 r
+  layer1[2].mac1/mult_14/U65/CO (FADDX1_RVT)                   0.10 *     2.47 r
+  layer1[2].mac1/mult_14/U64/CO (FADDX1_RVT)                   0.10 *     2.57 r
+  layer1[2].mac1/mult_14/U63/CO (FADDX1_RVT)                   0.10 *     2.67 r
+  layer1[2].mac1/mult_14/U62/CO (FADDX1_RVT)                   0.10 *     2.77 r
+  layer1[2].mac1/mult_14/U61/CO (FADDX1_RVT)                   0.10 *     2.87 r
+  layer1[2].mac1/mult_14/U60/CO (FADDX1_RVT)                   0.10 *     2.97 r
+  layer1[2].mac1/mult_14/U59/CO (FADDX1_RVT)                   0.10 *     3.07 r
+  layer1[2].mac1/mult_14/U58/CO (FADDX1_RVT)                   0.10 *     3.17 r
+  layer1[2].mac1/mult_14/U57/CO (FADDX1_RVT)                   0.10 *     3.27 r
+  layer1[2].mac1/mult_14/U56/CO (FADDX1_RVT)                   0.10 *     3.37 r
+  layer1[2].mac1/mult_14/U55/CO (FADDX1_RVT)                   0.10 *     3.47 r
+  layer1[2].mac1/mult_14/U54/CO (FADDX1_RVT)                   0.10 *     3.57 r
+  layer1[2].mac1/mult_14/U53/S (FADDX1_RVT)                    0.15 *     3.72 f
+  layer1[2].mac1/mult_14/product[29] (MAC_DW_mult_tc_1_2)      0.00       3.72 f
+  layer1[2].mac1/add_14/B[29] (MAC_DW01_add_0_2)               0.00       3.72 f
+  layer1[2].mac1/add_14/U1_29/S (FADDX1_RVT)                   0.14 *     3.87 r
+  layer1[2].mac1/add_14/SUM[29] (MAC_DW01_add_0_2)             0.00       3.87 r
+  layer1[2].mac1/acc_reg[29]/D (DFFARX1_RVT)                   0.00 *     3.87 r
+  data arrival time                                                       3.87
+
+  clock clk (rise edge)                                        4.00       4.00
+  clock network delay (propagated)                             0.06       4.06
+  layer1[2].mac1/acc_reg[29]/CLK (DFFARX1_RVT)                 0.00       4.06 r
+  library setup time                                          -0.06       4.00
+  data required time                                                      4.00
+  -------------------------------------------------------------------------------
+  data required time                                                      4.00
+  data arrival time                                                      -3.87
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.14
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[3].mac1/acc_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                       Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.00       0.00
+  clock network delay (propagated)                            0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                        0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                          0.19       0.24 r
+  ds/data_out[1] (DataShift_WIDTH16)                          0.00       0.24 r
+  U49/Y (NBUFFX8_RVT)                                         0.09 *     0.33 r
+  layer1[3].mac1/a[1] (MAC_1)                                 0.00       0.33 r
+  layer1[3].mac1/mult_14/a[1] (MAC_DW_mult_tc_1_1)            0.00       0.33 r
+  layer1[3].mac1/mult_14/U527/Y (XNOR2X1_RVT)                 0.14 *     0.47 r
+  layer1[3].mac1/mult_14/U14/Y (NBUFFX4_RVT)                  0.07 *     0.55 r
+  layer1[3].mac1/mult_14/U525/Y (NAND2X2_RVT)                 0.13 *     0.67 f
+  layer1[3].mac1/mult_14/U426/Y (OAI22X1_RVT)                 0.10 *     0.77 r
+  layer1[3].mac1/mult_14/U187/SO (HADDX1_RVT)                 0.11 *     0.88 f
+  layer1[3].mac1/mult_14/U79/S (FADDX1_RVT)                   0.15 *     1.03 r
+  layer1[3].mac1/mult_14/product[3] (MAC_DW_mult_tc_1_1)      0.00       1.03 r
+  layer1[3].mac1/add_14/B[3] (MAC_DW01_add_0_1)               0.00       1.03 r
+  layer1[3].mac1/add_14/U1_3/CO (FADDX1_RVT)                  0.10 *     1.13 r
+  layer1[3].mac1/add_14/U1_4/CO (FADDX1_RVT)                  0.10 *     1.23 r
+  layer1[3].mac1/add_14/U1_5/CO (FADDX1_RVT)                  0.10 *     1.33 r
+  layer1[3].mac1/add_14/U1_6/CO (FADDX1_RVT)                  0.10 *     1.43 r
+  layer1[3].mac1/add_14/U1_7/CO (FADDX1_RVT)                  0.10 *     1.53 r
+  layer1[3].mac1/add_14/U1_8/CO (FADDX1_RVT)                  0.10 *     1.63 r
+  layer1[3].mac1/add_14/U1_9/CO (FADDX1_RVT)                  0.10 *     1.73 r
+  layer1[3].mac1/add_14/U1_10/CO (FADDX1_RVT)                 0.10 *     1.83 r
+  layer1[3].mac1/add_14/U1_11/CO (FADDX1_RVT)                 0.10 *     1.93 r
+  layer1[3].mac1/add_14/U1_12/CO (FADDX1_RVT)                 0.10 *     2.03 r
+  layer1[3].mac1/add_14/U1_13/CO (FADDX1_RVT)                 0.10 *     2.14 r
+  layer1[3].mac1/add_14/U1_14/CO (FADDX1_RVT)                 0.10 *     2.23 r
+  layer1[3].mac1/add_14/U1_15/CO (FADDX1_RVT)                 0.12 *     2.36 r
+  layer1[3].mac1/add_14/U1_16/CO (FADDX1_RVT)                 0.11 *     2.46 r
+  layer1[3].mac1/add_14/U1_17/CO (FADDX1_RVT)                 0.11 *     2.57 r
+  layer1[3].mac1/add_14/U1_18/CO (FADDX1_RVT)                 0.10 *     2.67 r
+  layer1[3].mac1/add_14/U1_19/CO (FADDX1_RVT)                 0.11 *     2.79 r
+  layer1[3].mac1/add_14/U1_20/CO (FADDX1_RVT)                 0.11 *     2.90 r
+  layer1[3].mac1/add_14/U1_21/CO (FADDX1_RVT)                 0.10 *     3.00 r
+  layer1[3].mac1/add_14/U1_22/CO (FADDX1_RVT)                 0.10 *     3.10 r
+  layer1[3].mac1/add_14/U1_23/CO (FADDX1_RVT)                 0.10 *     3.20 r
+  layer1[3].mac1/add_14/U1_24/CO (FADDX1_RVT)                 0.10 *     3.30 r
+  layer1[3].mac1/add_14/U1_25/CO (FADDX1_RVT)                 0.10 *     3.40 r
+  layer1[3].mac1/add_14/U1_26/CO (FADDX1_RVT)                 0.10 *     3.50 r
+  layer1[3].mac1/add_14/U1_27/CO (FADDX1_RVT)                 0.10 *     3.60 r
+  layer1[3].mac1/add_14/U1_28/CO (FADDX1_RVT)                 0.10 *     3.71 r
+  layer1[3].mac1/add_14/U1_29/S (FADDX1_RVT)                  0.14 *     3.85 f
+  layer1[3].mac1/add_14/SUM[29] (MAC_DW01_add_0_1)            0.00       3.85 f
+  layer1[3].mac1/acc_reg[29]/D (DFFARX1_RVT)                  0.00 *     3.85 f
+  data arrival time                                                      3.85
+
+  clock clk (rise edge)                                       4.00       4.00
+  clock network delay (propagated)                            0.06       4.06
+  layer1[3].mac1/acc_reg[29]/CLK (DFFARX1_RVT)                0.00       4.06 r
+  library setup time                                         -0.04       4.02
+  data required time                                                     4.02
+  ------------------------------------------------------------------------------
+  data required time                                                     4.02
+  data arrival time                                                     -3.85
+  ------------------------------------------------------------------------------
+  slack (MET)                                                            0.17
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[1].mac1/acc_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                      Incr       Path
+  -----------------------------------------------------------------------------
+  clock clk (rise edge)                                      0.00       0.00
+  clock network delay (propagated)                           0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                       0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                         0.19       0.24 r
+  ds/data_out[1] (DataShift_WIDTH16)                         0.00       0.24 r
+  U49/Y (NBUFFX8_RVT)                                        0.09 *     0.33 r
+  U50/Y (NBUFFX16_RVT)                                       0.09 *     0.42 r
+  layer1[1].mac1/IN1 (MAC)                                   0.00       0.42 r
+  layer1[1].mac1/mult_14/IN1 (MAC_DW_mult_tc_1)              0.00       0.42 r
+  layer1[1].mac1/mult_14/U527/Y (XNOR2X1_RVT)                0.12 *     0.54 f
+  layer1[1].mac1/mult_14/U7/Y (NBUFFX4_RVT)                  0.07 *     0.62 f
+  layer1[1].mac1/mult_14/U525/Y (NAND2X2_RVT)                0.13 *     0.75 r
+  layer1[1].mac1/mult_14/U426/Y (OAI22X1_RVT)                0.09 *     0.83 f
+  layer1[1].mac1/mult_14/U187/SO (HADDX1_RVT)                0.11 *     0.94 r
+  layer1[1].mac1/mult_14/U79/CO (FADDX1_RVT)                 0.10 *     1.04 r
+  layer1[1].mac1/mult_14/U78/CO (FADDX1_RVT)                 0.10 *     1.15 r
+  layer1[1].mac1/mult_14/U77/CO (FADDX1_RVT)                 0.10 *     1.25 r
+  layer1[1].mac1/mult_14/U76/CO (FADDX1_RVT)                 0.11 *     1.36 r
+  layer1[1].mac1/mult_14/U75/CO (FADDX1_RVT)                 0.10 *     1.46 r
+  layer1[1].mac1/mult_14/U74/CO (FADDX1_RVT)                 0.10 *     1.57 r
+  layer1[1].mac1/mult_14/U73/CO (FADDX1_RVT)                 0.10 *     1.67 r
+  layer1[1].mac1/mult_14/U72/CO (FADDX1_RVT)                 0.10 *     1.77 r
+  layer1[1].mac1/mult_14/U71/CO (FADDX1_RVT)                 0.10 *     1.87 r
+  layer1[1].mac1/mult_14/U70/CO (FADDX1_RVT)                 0.10 *     1.97 r
+  layer1[1].mac1/mult_14/U69/CO (FADDX1_RVT)                 0.10 *     2.07 r
+  layer1[1].mac1/mult_14/U68/CO (FADDX1_RVT)                 0.10 *     2.17 r
+  layer1[1].mac1/mult_14/U67/CO (FADDX1_RVT)                 0.10 *     2.27 r
+  layer1[1].mac1/mult_14/U66/CO (FADDX1_RVT)                 0.10 *     2.37 r
+  layer1[1].mac1/mult_14/U65/CO (FADDX1_RVT)                 0.10 *     2.48 r
+  layer1[1].mac1/mult_14/U64/CO (FADDX1_RVT)                 0.10 *     2.58 r
+  layer1[1].mac1/mult_14/U63/CO (FADDX1_RVT)                 0.10 *     2.68 r
+  layer1[1].mac1/mult_14/U62/CO (FADDX1_RVT)                 0.10 *     2.79 r
+  layer1[1].mac1/mult_14/U61/CO (FADDX1_RVT)                 0.10 *     2.89 r
+  layer1[1].mac1/mult_14/U60/CO (FADDX1_RVT)                 0.11 *     2.99 r
+  layer1[1].mac1/mult_14/U59/CO (FADDX1_RVT)                 0.10 *     3.10 r
+  layer1[1].mac1/mult_14/U58/CO (FADDX1_RVT)                 0.10 *     3.20 r
+  layer1[1].mac1/mult_14/U57/CO (FADDX1_RVT)                 0.10 *     3.30 r
+  layer1[1].mac1/mult_14/U56/CO (FADDX1_RVT)                 0.10 *     3.39 r
+  layer1[1].mac1/mult_14/U55/CO (FADDX1_RVT)                 0.10 *     3.49 r
+  layer1[1].mac1/mult_14/U54/S (FADDX1_RVT)                  0.15 *     3.65 f
+  layer1[1].mac1/mult_14/product[28] (MAC_DW_mult_tc_1)      0.00       3.65 f
+  layer1[1].mac1/add_14/B[28] (MAC_DW01_add_0)               0.00       3.65 f
+  layer1[1].mac1/add_14/U1_28/S (FADDX1_RVT)                 0.14 *     3.79 r
+  layer1[1].mac1/add_14/SUM[28] (MAC_DW01_add_0)             0.00       3.79 r
+  layer1[1].mac1/acc_reg[28]/D (DFFARX1_RVT)                 0.00 *     3.79 r
+  data arrival time                                                     3.79
+
+  clock clk (rise edge)                                      4.00       4.00
+  clock network delay (propagated)                           0.06       4.06
+  layer1[1].mac1/acc_reg[28]/CLK (DFFARX1_RVT)               0.00       4.06 r
+  library setup time                                        -0.06       4.00
+  data required time                                                    4.00
+  -----------------------------------------------------------------------------
+  data required time                                                    4.00
+  data arrival time                                                    -3.79
+  -----------------------------------------------------------------------------
+  slack (MET)                                                           0.21
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[0].mac1/acc_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                        Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                        0.00       0.00
+  clock network delay (propagated)                             0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                         0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                           0.19       0.24 r
+  ds/data_out[1] (DataShift_WIDTH16)                           0.00       0.24 r
+  U49/Y (NBUFFX8_RVT)                                          0.09 *     0.33 r
+  U50/Y (NBUFFX16_RVT)                                         0.09 *     0.42 r
+  layer1[0].mac1/IN3 (MAC_0)                                   0.00       0.42 r
+  layer1[0].mac1/mult_14/IN3 (MAC_DW_mult_tc_1_0)              0.00       0.42 r
+  layer1[0].mac1/mult_14/U527/Y (XNOR2X1_RVT)                  0.12 *     0.54 f
+  layer1[0].mac1/mult_14/U9/Y (NBUFFX4_RVT)                    0.07 *     0.62 f
+  layer1[0].mac1/mult_14/U525/Y (NAND2X2_RVT)                  0.13 *     0.75 r
+  layer1[0].mac1/mult_14/U426/Y (OAI22X1_RVT)                  0.09 *     0.84 f
+  layer1[0].mac1/mult_14/U187/SO (HADDX1_RVT)                  0.11 *     0.95 r
+  layer1[0].mac1/mult_14/U79/CO (FADDX1_RVT)                   0.10 *     1.05 r
+  layer1[0].mac1/mult_14/U78/CO (FADDX1_RVT)                   0.10 *     1.15 r
+  layer1[0].mac1/mult_14/U77/CO (FADDX1_RVT)                   0.10 *     1.25 r
+  layer1[0].mac1/mult_14/U76/CO (FADDX1_RVT)                   0.10 *     1.35 r
+  layer1[0].mac1/mult_14/U75/CO (FADDX1_RVT)                   0.10 *     1.45 r
+  layer1[0].mac1/mult_14/U74/CO (FADDX1_RVT)                   0.10 *     1.55 r
+  layer1[0].mac1/mult_14/U73/CO (FADDX1_RVT)                   0.10 *     1.65 r
+  layer1[0].mac1/mult_14/U72/CO (FADDX1_RVT)                   0.10 *     1.76 r
+  layer1[0].mac1/mult_14/U71/CO (FADDX1_RVT)                   0.10 *     1.86 r
+  layer1[0].mac1/mult_14/U70/CO (FADDX1_RVT)                   0.10 *     1.96 r
+  layer1[0].mac1/mult_14/U69/CO (FADDX1_RVT)                   0.10 *     2.06 r
+  layer1[0].mac1/mult_14/U68/CO (FADDX1_RVT)                   0.10 *     2.16 r
+  layer1[0].mac1/mult_14/U67/CO (FADDX1_RVT)                   0.10 *     2.26 r
+  layer1[0].mac1/mult_14/U66/CO (FADDX1_RVT)                   0.10 *     2.37 r
+  layer1[0].mac1/mult_14/U65/CO (FADDX1_RVT)                   0.10 *     2.47 r
+  layer1[0].mac1/mult_14/U64/CO (FADDX1_RVT)                   0.10 *     2.57 r
+  layer1[0].mac1/mult_14/U63/CO (FADDX1_RVT)                   0.10 *     2.67 r
+  layer1[0].mac1/mult_14/U62/CO (FADDX1_RVT)                   0.10 *     2.77 r
+  layer1[0].mac1/mult_14/U61/CO (FADDX1_RVT)                   0.10 *     2.87 r
+  layer1[0].mac1/mult_14/U60/CO (FADDX1_RVT)                   0.10 *     2.98 r
+  layer1[0].mac1/mult_14/U59/CO (FADDX1_RVT)                   0.10 *     3.08 r
+  layer1[0].mac1/mult_14/U58/CO (FADDX1_RVT)                   0.10 *     3.18 r
+  layer1[0].mac1/mult_14/U57/CO (FADDX1_RVT)                   0.10 *     3.28 r
+  layer1[0].mac1/mult_14/U56/CO (FADDX1_RVT)                   0.10 *     3.38 r
+  layer1[0].mac1/mult_14/U55/CO (FADDX1_RVT)                   0.10 *     3.48 r
+  layer1[0].mac1/mult_14/U54/S (FADDX1_RVT)                    0.16 *     3.64 f
+  layer1[0].mac1/mult_14/product[28] (MAC_DW_mult_tc_1_0)      0.00       3.64 f
+  layer1[0].mac1/add_14/B[28] (MAC_DW01_add_0_0)               0.00       3.64 f
+  layer1[0].mac1/add_14/U1_28/S (FADDX1_RVT)                   0.14 *     3.79 r
+  layer1[0].mac1/add_14/SUM[28] (MAC_DW01_add_0_0)             0.00       3.79 r
+  layer1[0].mac1/acc_reg[28]/D (DFFARX1_RVT)                   0.00 *     3.79 r
+  data arrival time                                                       3.79
+
+  clock clk (rise edge)                                        4.00       4.00
+  clock network delay (propagated)                             0.06       4.06
+  layer1[0].mac1/acc_reg[28]/CLK (DFFARX1_RVT)                 0.00       4.06 r
+  library setup time                                          -0.06       4.00
+  data required time                                                      4.00
+  -------------------------------------------------------------------------------
+  data required time                                                      4.00
+  data arrival time                                                      -3.79
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.22
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[2].mac1/acc_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                        Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                        0.00       0.00
+  clock network delay (propagated)                             0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                         0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                           0.18       0.24 f
+  ds/data_out[1] (DataShift_WIDTH16)                           0.00       0.24 f
+  U49/Y (NBUFFX8_RVT)                                          0.09 *     0.32 f
+  U50/Y (NBUFFX16_RVT)                                         0.09 *     0.42 f
+  layer1[2].mac1/IN1 (MAC_2)                                   0.00       0.42 f
+  layer1[2].mac1/mult_14/IN1 (MAC_DW_mult_tc_1_2)              0.00       0.42 f
+  layer1[2].mac1/mult_14/U529/Y (XOR2X1_RVT)                   0.13 *     0.55 r
+  layer1[2].mac1/mult_14/U528/Y (NAND2X2_RVT)                  0.12 *     0.67 f
+  layer1[2].mac1/mult_14/U463/Y (OAI22X1_RVT)                  0.11 *     0.78 r
+  layer1[2].mac1/mult_14/U81/C1 (HADDX1_RVT)                   0.07 *     0.85 r
+  layer1[2].mac1/mult_14/U80/CO (FADDX1_RVT)                   0.10 *     0.95 r
+  layer1[2].mac1/mult_14/U79/CO (FADDX1_RVT)                   0.10 *     1.05 r
+  layer1[2].mac1/mult_14/U78/CO (FADDX1_RVT)                   0.10 *     1.15 r
+  layer1[2].mac1/mult_14/U77/CO (FADDX1_RVT)                   0.10 *     1.25 r
+  layer1[2].mac1/mult_14/U76/CO (FADDX1_RVT)                   0.10 *     1.35 r
+  layer1[2].mac1/mult_14/U75/CO (FADDX1_RVT)                   0.10 *     1.45 r
+  layer1[2].mac1/mult_14/U74/CO (FADDX1_RVT)                   0.10 *     1.55 r
+  layer1[2].mac1/mult_14/U73/CO (FADDX1_RVT)                   0.10 *     1.65 r
+  layer1[2].mac1/mult_14/U72/CO (FADDX1_RVT)                   0.10 *     1.75 r
+  layer1[2].mac1/mult_14/U71/CO (FADDX1_RVT)                   0.10 *     1.85 r
+  layer1[2].mac1/mult_14/U70/CO (FADDX1_RVT)                   0.10 *     1.95 r
+  layer1[2].mac1/mult_14/U69/CO (FADDX1_RVT)                   0.10 *     2.05 r
+  layer1[2].mac1/mult_14/U68/CO (FADDX1_RVT)                   0.10 *     2.16 r
+  layer1[2].mac1/mult_14/U67/CO (FADDX1_RVT)                   0.11 *     2.26 r
+  layer1[2].mac1/mult_14/U66/CO (FADDX1_RVT)                   0.11 *     2.37 r
+  layer1[2].mac1/mult_14/U65/CO (FADDX1_RVT)                   0.10 *     2.47 r
+  layer1[2].mac1/mult_14/U64/CO (FADDX1_RVT)                   0.10 *     2.57 r
+  layer1[2].mac1/mult_14/U63/CO (FADDX1_RVT)                   0.10 *     2.67 r
+  layer1[2].mac1/mult_14/U62/CO (FADDX1_RVT)                   0.10 *     2.77 r
+  layer1[2].mac1/mult_14/U61/CO (FADDX1_RVT)                   0.10 *     2.87 r
+  layer1[2].mac1/mult_14/U60/CO (FADDX1_RVT)                   0.10 *     2.97 r
+  layer1[2].mac1/mult_14/U59/CO (FADDX1_RVT)                   0.10 *     3.07 r
+  layer1[2].mac1/mult_14/U58/CO (FADDX1_RVT)                   0.10 *     3.17 r
+  layer1[2].mac1/mult_14/U57/CO (FADDX1_RVT)                   0.10 *     3.27 r
+  layer1[2].mac1/mult_14/U56/CO (FADDX1_RVT)                   0.10 *     3.37 r
+  layer1[2].mac1/mult_14/U55/CO (FADDX1_RVT)                   0.10 *     3.47 r
+  layer1[2].mac1/mult_14/U54/S (FADDX1_RVT)                    0.15 *     3.62 f
+  layer1[2].mac1/mult_14/product[28] (MAC_DW_mult_tc_1_2)      0.00       3.62 f
+  layer1[2].mac1/add_14/B[28] (MAC_DW01_add_0_2)               0.00       3.62 f
+  layer1[2].mac1/add_14/U1_28/S (FADDX1_RVT)                   0.14 *     3.77 r
+  layer1[2].mac1/add_14/SUM[28] (MAC_DW01_add_0_2)             0.00       3.77 r
+  layer1[2].mac1/acc_reg[28]/D (DFFARX1_RVT)                   0.00 *     3.77 r
+  data arrival time                                                       3.77
+
+  clock clk (rise edge)                                        4.00       4.00
+  clock network delay (propagated)                             0.06       4.06
+  layer1[2].mac1/acc_reg[28]/CLK (DFFARX1_RVT)                 0.00       4.06 r
+  library setup time                                          -0.06       4.00
+  data required time                                                      4.00
+  -------------------------------------------------------------------------------
+  data required time                                                      4.00
+  data arrival time                                                      -3.77
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.24
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[3].mac1/acc_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                        Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                        0.00       0.00
+  clock network delay (propagated)                             0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                         0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                           0.19       0.24 r
+  ds/data_out[1] (DataShift_WIDTH16)                           0.00       0.24 r
+  U49/Y (NBUFFX8_RVT)                                          0.09 *     0.33 r
+  layer1[3].mac1/a[1] (MAC_1)                                  0.00       0.33 r
+  layer1[3].mac1/mult_14/a[1] (MAC_DW_mult_tc_1_1)             0.00       0.33 r
+  layer1[3].mac1/mult_14/U527/Y (XNOR2X1_RVT)                  0.13 *     0.46 f
+  layer1[3].mac1/mult_14/U14/Y (NBUFFX4_RVT)                   0.07 *     0.54 f
+  layer1[3].mac1/mult_14/U525/Y (NAND2X2_RVT)                  0.13 *     0.67 r
+  layer1[3].mac1/mult_14/U426/Y (OAI22X1_RVT)                  0.09 *     0.76 f
+  layer1[3].mac1/mult_14/U187/SO (HADDX1_RVT)                  0.11 *     0.87 r
+  layer1[3].mac1/mult_14/U79/CO (FADDX1_RVT)                   0.10 *     0.97 r
+  layer1[3].mac1/mult_14/U78/CO (FADDX1_RVT)                   0.10 *     1.07 r
+  layer1[3].mac1/mult_14/U77/CO (FADDX1_RVT)                   0.10 *     1.17 r
+  layer1[3].mac1/mult_14/U76/CO (FADDX1_RVT)                   0.10 *     1.27 r
+  layer1[3].mac1/mult_14/U75/CO (FADDX1_RVT)                   0.10 *     1.37 r
+  layer1[3].mac1/mult_14/U74/CO (FADDX1_RVT)                   0.11 *     1.48 r
+  layer1[3].mac1/mult_14/U73/CO (FADDX1_RVT)                   0.10 *     1.58 r
+  layer1[3].mac1/mult_14/U72/CO (FADDX1_RVT)                   0.10 *     1.68 r
+  layer1[3].mac1/mult_14/U71/CO (FADDX1_RVT)                   0.10 *     1.78 r
+  layer1[3].mac1/mult_14/U70/CO (FADDX1_RVT)                   0.10 *     1.89 r
+  layer1[3].mac1/mult_14/U69/CO (FADDX1_RVT)                   0.10 *     1.99 r
+  layer1[3].mac1/mult_14/U68/CO (FADDX1_RVT)                   0.11 *     2.09 r
+  layer1[3].mac1/mult_14/U67/CO (FADDX1_RVT)                   0.11 *     2.20 r
+  layer1[3].mac1/mult_14/U66/CO (FADDX1_RVT)                   0.10 *     2.30 r
+  layer1[3].mac1/mult_14/U65/CO (FADDX1_RVT)                   0.10 *     2.40 r
+  layer1[3].mac1/mult_14/U64/CO (FADDX1_RVT)                   0.10 *     2.50 r
+  layer1[3].mac1/mult_14/U63/CO (FADDX1_RVT)                   0.11 *     2.61 r
+  layer1[3].mac1/mult_14/U62/CO (FADDX1_RVT)                   0.11 *     2.72 r
+  layer1[3].mac1/mult_14/U61/CO (FADDX1_RVT)                   0.10 *     2.83 r
+  layer1[3].mac1/mult_14/U60/CO (FADDX1_RVT)                   0.10 *     2.93 r
+  layer1[3].mac1/mult_14/U59/CO (FADDX1_RVT)                   0.10 *     3.03 r
+  layer1[3].mac1/mult_14/U58/CO (FADDX1_RVT)                   0.10 *     3.13 r
+  layer1[3].mac1/mult_14/U57/CO (FADDX1_RVT)                   0.10 *     3.23 r
+  layer1[3].mac1/mult_14/U56/CO (FADDX1_RVT)                   0.10 *     3.33 r
+  layer1[3].mac1/mult_14/U55/CO (FADDX1_RVT)                   0.10 *     3.43 r
+  layer1[3].mac1/mult_14/U54/S (FADDX1_RVT)                    0.16 *     3.59 f
+  layer1[3].mac1/mult_14/product[28] (MAC_DW_mult_tc_1_1)      0.00       3.59 f
+  layer1[3].mac1/add_14/B[28] (MAC_DW01_add_0_1)               0.00       3.59 f
+  layer1[3].mac1/add_14/U1_28/S (FADDX1_RVT)                   0.14 *     3.73 r
+  layer1[3].mac1/add_14/SUM[28] (MAC_DW01_add_0_1)             0.00       3.73 r
+  layer1[3].mac1/acc_reg[28]/D (DFFARX1_RVT)                   0.00 *     3.73 r
+  data arrival time                                                       3.73
+
+  clock clk (rise edge)                                        4.00       4.00
+  clock network delay (propagated)                             0.06       4.06
+  layer1[3].mac1/acc_reg[28]/CLK (DFFARX1_RVT)                 0.00       4.06 r
+  library setup time                                          -0.06       4.00
+  data required time                                                      4.00
+  -------------------------------------------------------------------------------
+  data required time                                                      4.00
+  data arrival time                                                      -3.73
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.28
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[1].mac1/acc_reg[27]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                      Incr       Path
+  -----------------------------------------------------------------------------
+  clock clk (rise edge)                                      0.00       0.00
+  clock network delay (propagated)                           0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                       0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                         0.19       0.24 r
+  ds/data_out[1] (DataShift_WIDTH16)                         0.00       0.24 r
+  U49/Y (NBUFFX8_RVT)                                        0.09 *     0.33 r
+  U50/Y (NBUFFX16_RVT)                                       0.09 *     0.42 r
+  layer1[1].mac1/IN1 (MAC)                                   0.00       0.42 r
+  layer1[1].mac1/mult_14/IN1 (MAC_DW_mult_tc_1)              0.00       0.42 r
+  layer1[1].mac1/mult_14/U527/Y (XNOR2X1_RVT)                0.12 *     0.54 f
+  layer1[1].mac1/mult_14/U7/Y (NBUFFX4_RVT)                  0.07 *     0.62 f
+  layer1[1].mac1/mult_14/U525/Y (NAND2X2_RVT)                0.13 *     0.75 r
+  layer1[1].mac1/mult_14/U426/Y (OAI22X1_RVT)                0.09 *     0.83 f
+  layer1[1].mac1/mult_14/U187/SO (HADDX1_RVT)                0.11 *     0.94 r
+  layer1[1].mac1/mult_14/U79/CO (FADDX1_RVT)                 0.10 *     1.04 r
+  layer1[1].mac1/mult_14/U78/CO (FADDX1_RVT)                 0.10 *     1.15 r
+  layer1[1].mac1/mult_14/U77/CO (FADDX1_RVT)                 0.10 *     1.25 r
+  layer1[1].mac1/mult_14/U76/CO (FADDX1_RVT)                 0.11 *     1.36 r
+  layer1[1].mac1/mult_14/U75/CO (FADDX1_RVT)                 0.10 *     1.46 r
+  layer1[1].mac1/mult_14/U74/CO (FADDX1_RVT)                 0.10 *     1.57 r
+  layer1[1].mac1/mult_14/U73/CO (FADDX1_RVT)                 0.10 *     1.67 r
+  layer1[1].mac1/mult_14/U72/CO (FADDX1_RVT)                 0.10 *     1.77 r
+  layer1[1].mac1/mult_14/U71/CO (FADDX1_RVT)                 0.10 *     1.87 r
+  layer1[1].mac1/mult_14/U70/CO (FADDX1_RVT)                 0.10 *     1.97 r
+  layer1[1].mac1/mult_14/U69/CO (FADDX1_RVT)                 0.10 *     2.07 r
+  layer1[1].mac1/mult_14/U68/CO (FADDX1_RVT)                 0.10 *     2.17 r
+  layer1[1].mac1/mult_14/U67/CO (FADDX1_RVT)                 0.10 *     2.27 r
+  layer1[1].mac1/mult_14/U66/CO (FADDX1_RVT)                 0.10 *     2.37 r
+  layer1[1].mac1/mult_14/U65/CO (FADDX1_RVT)                 0.10 *     2.48 r
+  layer1[1].mac1/mult_14/U64/CO (FADDX1_RVT)                 0.10 *     2.58 r
+  layer1[1].mac1/mult_14/U63/CO (FADDX1_RVT)                 0.10 *     2.68 r
+  layer1[1].mac1/mult_14/U62/CO (FADDX1_RVT)                 0.10 *     2.79 r
+  layer1[1].mac1/mult_14/U61/CO (FADDX1_RVT)                 0.10 *     2.89 r
+  layer1[1].mac1/mult_14/U60/CO (FADDX1_RVT)                 0.11 *     2.99 r
+  layer1[1].mac1/mult_14/U59/CO (FADDX1_RVT)                 0.10 *     3.10 r
+  layer1[1].mac1/mult_14/U58/CO (FADDX1_RVT)                 0.10 *     3.20 r
+  layer1[1].mac1/mult_14/U57/CO (FADDX1_RVT)                 0.10 *     3.30 r
+  layer1[1].mac1/mult_14/U56/CO (FADDX1_RVT)                 0.10 *     3.39 r
+  layer1[1].mac1/mult_14/U55/S (FADDX1_RVT)                  0.15 *     3.55 f
+  layer1[1].mac1/mult_14/product[27] (MAC_DW_mult_tc_1)      0.00       3.55 f
+  layer1[1].mac1/add_14/B[27] (MAC_DW01_add_0)               0.00       3.55 f
+  layer1[1].mac1/add_14/U1_27/S (FADDX1_RVT)                 0.14 *     3.69 r
+  layer1[1].mac1/add_14/SUM[27] (MAC_DW01_add_0)             0.00       3.69 r
+  layer1[1].mac1/acc_reg[27]/D (DFFARX1_RVT)                 0.00 *     3.69 r
+  data arrival time                                                     3.69
+
+  clock clk (rise edge)                                      4.00       4.00
+  clock network delay (propagated)                           0.06       4.06
+  layer1[1].mac1/acc_reg[27]/CLK (DFFARX1_RVT)               0.00       4.06 r
+  library setup time                                        -0.06       4.00
+  data required time                                                    4.00
+  -----------------------------------------------------------------------------
+  data required time                                                    4.00
+  data arrival time                                                    -3.69
+  -----------------------------------------------------------------------------
+  slack (MET)                                                           0.31
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[0].mac1/acc_reg[27]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                        Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                        0.00       0.00
+  clock network delay (propagated)                             0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                         0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                           0.19       0.24 r
+  ds/data_out[1] (DataShift_WIDTH16)                           0.00       0.24 r
+  U49/Y (NBUFFX8_RVT)                                          0.09 *     0.33 r
+  U50/Y (NBUFFX16_RVT)                                         0.09 *     0.42 r
+  layer1[0].mac1/IN3 (MAC_0)                                   0.00       0.42 r
+  layer1[0].mac1/mult_14/IN3 (MAC_DW_mult_tc_1_0)              0.00       0.42 r
+  layer1[0].mac1/mult_14/U527/Y (XNOR2X1_RVT)                  0.12 *     0.54 f
+  layer1[0].mac1/mult_14/U9/Y (NBUFFX4_RVT)                    0.07 *     0.62 f
+  layer1[0].mac1/mult_14/U525/Y (NAND2X2_RVT)                  0.13 *     0.75 r
+  layer1[0].mac1/mult_14/U426/Y (OAI22X1_RVT)                  0.09 *     0.84 f
+  layer1[0].mac1/mult_14/U187/SO (HADDX1_RVT)                  0.11 *     0.95 r
+  layer1[0].mac1/mult_14/U79/CO (FADDX1_RVT)                   0.10 *     1.05 r
+  layer1[0].mac1/mult_14/U78/CO (FADDX1_RVT)                   0.10 *     1.15 r
+  layer1[0].mac1/mult_14/U77/CO (FADDX1_RVT)                   0.10 *     1.25 r
+  layer1[0].mac1/mult_14/U76/CO (FADDX1_RVT)                   0.10 *     1.35 r
+  layer1[0].mac1/mult_14/U75/CO (FADDX1_RVT)                   0.10 *     1.45 r
+  layer1[0].mac1/mult_14/U74/CO (FADDX1_RVT)                   0.10 *     1.55 r
+  layer1[0].mac1/mult_14/U73/CO (FADDX1_RVT)                   0.10 *     1.65 r
+  layer1[0].mac1/mult_14/U72/CO (FADDX1_RVT)                   0.10 *     1.76 r
+  layer1[0].mac1/mult_14/U71/CO (FADDX1_RVT)                   0.10 *     1.86 r
+  layer1[0].mac1/mult_14/U70/CO (FADDX1_RVT)                   0.10 *     1.96 r
+  layer1[0].mac1/mult_14/U69/CO (FADDX1_RVT)                   0.10 *     2.06 r
+  layer1[0].mac1/mult_14/U68/CO (FADDX1_RVT)                   0.10 *     2.16 r
+  layer1[0].mac1/mult_14/U67/CO (FADDX1_RVT)                   0.10 *     2.26 r
+  layer1[0].mac1/mult_14/U66/CO (FADDX1_RVT)                   0.10 *     2.37 r
+  layer1[0].mac1/mult_14/U65/CO (FADDX1_RVT)                   0.10 *     2.47 r
+  layer1[0].mac1/mult_14/U64/CO (FADDX1_RVT)                   0.10 *     2.57 r
+  layer1[0].mac1/mult_14/U63/CO (FADDX1_RVT)                   0.10 *     2.67 r
+  layer1[0].mac1/mult_14/U62/CO (FADDX1_RVT)                   0.10 *     2.77 r
+  layer1[0].mac1/mult_14/U61/CO (FADDX1_RVT)                   0.10 *     2.87 r
+  layer1[0].mac1/mult_14/U60/CO (FADDX1_RVT)                   0.10 *     2.98 r
+  layer1[0].mac1/mult_14/U59/CO (FADDX1_RVT)                   0.10 *     3.08 r
+  layer1[0].mac1/mult_14/U58/CO (FADDX1_RVT)                   0.10 *     3.18 r
+  layer1[0].mac1/mult_14/U57/CO (FADDX1_RVT)                   0.10 *     3.28 r
+  layer1[0].mac1/mult_14/U56/CO (FADDX1_RVT)                   0.10 *     3.38 r
+  layer1[0].mac1/mult_14/U55/S (FADDX1_RVT)                    0.15 *     3.54 f
+  layer1[0].mac1/mult_14/product[27] (MAC_DW_mult_tc_1_0)      0.00       3.54 f
+  layer1[0].mac1/add_14/B[27] (MAC_DW01_add_0_0)               0.00       3.54 f
+  layer1[0].mac1/add_14/U1_27/S (FADDX1_RVT)                   0.14 *     3.68 r
+  layer1[0].mac1/add_14/SUM[27] (MAC_DW01_add_0_0)             0.00       3.68 r
+  layer1[0].mac1/acc_reg[27]/D (DFFARX1_RVT)                   0.00 *     3.68 r
+  data arrival time                                                       3.68
+
+  clock clk (rise edge)                                        4.00       4.00
+  clock network delay (propagated)                             0.06       4.06
+  layer1[0].mac1/acc_reg[27]/CLK (DFFARX1_RVT)                 0.00       4.06 r
+  library setup time                                          -0.06       4.00
+  data required time                                                      4.00
+  -------------------------------------------------------------------------------
+  data required time                                                      4.00
+  data arrival time                                                      -3.68
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.32
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[2].mac1/acc_reg[27]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                        Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                        0.00       0.00
+  clock network delay (propagated)                             0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                         0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                           0.18       0.24 f
+  ds/data_out[1] (DataShift_WIDTH16)                           0.00       0.24 f
+  U49/Y (NBUFFX8_RVT)                                          0.09 *     0.32 f
+  U50/Y (NBUFFX16_RVT)                                         0.09 *     0.42 f
+  layer1[2].mac1/IN1 (MAC_2)                                   0.00       0.42 f
+  layer1[2].mac1/mult_14/IN1 (MAC_DW_mult_tc_1_2)              0.00       0.42 f
+  layer1[2].mac1/mult_14/U529/Y (XOR2X1_RVT)                   0.13 *     0.55 r
+  layer1[2].mac1/mult_14/U528/Y (NAND2X2_RVT)                  0.12 *     0.67 f
+  layer1[2].mac1/mult_14/U463/Y (OAI22X1_RVT)                  0.11 *     0.78 r
+  layer1[2].mac1/mult_14/U81/C1 (HADDX1_RVT)                   0.07 *     0.85 r
+  layer1[2].mac1/mult_14/U80/CO (FADDX1_RVT)                   0.10 *     0.95 r
+  layer1[2].mac1/mult_14/U79/CO (FADDX1_RVT)                   0.10 *     1.05 r
+  layer1[2].mac1/mult_14/U78/CO (FADDX1_RVT)                   0.10 *     1.15 r
+  layer1[2].mac1/mult_14/U77/CO (FADDX1_RVT)                   0.10 *     1.25 r
+  layer1[2].mac1/mult_14/U76/CO (FADDX1_RVT)                   0.10 *     1.35 r
+  layer1[2].mac1/mult_14/U75/CO (FADDX1_RVT)                   0.10 *     1.45 r
+  layer1[2].mac1/mult_14/U74/CO (FADDX1_RVT)                   0.10 *     1.55 r
+  layer1[2].mac1/mult_14/U73/CO (FADDX1_RVT)                   0.10 *     1.65 r
+  layer1[2].mac1/mult_14/U72/CO (FADDX1_RVT)                   0.10 *     1.75 r
+  layer1[2].mac1/mult_14/U71/CO (FADDX1_RVT)                   0.10 *     1.85 r
+  layer1[2].mac1/mult_14/U70/CO (FADDX1_RVT)                   0.10 *     1.95 r
+  layer1[2].mac1/mult_14/U69/CO (FADDX1_RVT)                   0.10 *     2.05 r
+  layer1[2].mac1/mult_14/U68/CO (FADDX1_RVT)                   0.10 *     2.16 r
+  layer1[2].mac1/mult_14/U67/CO (FADDX1_RVT)                   0.11 *     2.26 r
+  layer1[2].mac1/mult_14/U66/CO (FADDX1_RVT)                   0.11 *     2.37 r
+  layer1[2].mac1/mult_14/U65/CO (FADDX1_RVT)                   0.10 *     2.47 r
+  layer1[2].mac1/mult_14/U64/CO (FADDX1_RVT)                   0.10 *     2.57 r
+  layer1[2].mac1/mult_14/U63/CO (FADDX1_RVT)                   0.10 *     2.67 r
+  layer1[2].mac1/mult_14/U62/CO (FADDX1_RVT)                   0.10 *     2.77 r
+  layer1[2].mac1/mult_14/U61/CO (FADDX1_RVT)                   0.10 *     2.87 r
+  layer1[2].mac1/mult_14/U60/CO (FADDX1_RVT)                   0.10 *     2.97 r
+  layer1[2].mac1/mult_14/U59/CO (FADDX1_RVT)                   0.10 *     3.07 r
+  layer1[2].mac1/mult_14/U58/CO (FADDX1_RVT)                   0.10 *     3.17 r
+  layer1[2].mac1/mult_14/U57/CO (FADDX1_RVT)                   0.10 *     3.27 r
+  layer1[2].mac1/mult_14/U56/CO (FADDX1_RVT)                   0.10 *     3.37 r
+  layer1[2].mac1/mult_14/U55/S (FADDX1_RVT)                    0.16 *     3.53 f
+  layer1[2].mac1/mult_14/product[27] (MAC_DW_mult_tc_1_2)      0.00       3.53 f
+  layer1[2].mac1/add_14/B[27] (MAC_DW01_add_0_2)               0.00       3.53 f
+  layer1[2].mac1/add_14/U1_27/S (FADDX1_RVT)                   0.14 *     3.67 r
+  layer1[2].mac1/add_14/SUM[27] (MAC_DW01_add_0_2)             0.00       3.67 r
+  layer1[2].mac1/acc_reg[27]/D (DFFARX1_RVT)                   0.00 *     3.67 r
+  data arrival time                                                       3.67
+
+  clock clk (rise edge)                                        4.00       4.00
+  clock network delay (propagated)                             0.06       4.06
+  layer1[2].mac1/acc_reg[27]/CLK (DFFARX1_RVT)                 0.00       4.06 r
+  library setup time                                          -0.06       4.00
+  data required time                                                      4.00
+  -------------------------------------------------------------------------------
+  data required time                                                      4.00
+  data arrival time                                                      -3.67
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.33
+
+
+  Startpoint: ds/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: layer1[3].mac1/acc_reg[27]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                        Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                        0.00       0.00
+  clock network delay (propagated)                             0.06       0.06
+  ds/data_out_reg[1]/CLK (DFFARX1_RVT)                         0.00       0.06 r
+  ds/data_out_reg[1]/Q (DFFARX1_RVT)                           0.19       0.24 r
+  ds/data_out[1] (DataShift_WIDTH16)                           0.00       0.24 r
+  U49/Y (NBUFFX8_RVT)                                          0.09 *     0.33 r
+  layer1[3].mac1/a[1] (MAC_1)                                  0.00       0.33 r
+  layer1[3].mac1/mult_14/a[1] (MAC_DW_mult_tc_1_1)             0.00       0.33 r
+  layer1[3].mac1/mult_14/U527/Y (XNOR2X1_RVT)                  0.13 *     0.46 f
+  layer1[3].mac1/mult_14/U14/Y (NBUFFX4_RVT)                   0.07 *     0.54 f
+  layer1[3].mac1/mult_14/U525/Y (NAND2X2_RVT)                  0.13 *     0.67 r
+  layer1[3].mac1/mult_14/U426/Y (OAI22X1_RVT)                  0.09 *     0.76 f
+  layer1[3].mac1/mult_14/U187/SO (HADDX1_RVT)                  0.11 *     0.87 r
+  layer1[3].mac1/mult_14/U79/CO (FADDX1_RVT)                   0.10 *     0.97 r
+  layer1[3].mac1/mult_14/U78/CO (FADDX1_RVT)                   0.10 *     1.07 r
+  layer1[3].mac1/mult_14/U77/CO (FADDX1_RVT)                   0.10 *     1.17 r
+  layer1[3].mac1/mult_14/U76/CO (FADDX1_RVT)                   0.10 *     1.27 r
+  layer1[3].mac1/mult_14/U75/CO (FADDX1_RVT)                   0.10 *     1.37 r
+  layer1[3].mac1/mult_14/U74/CO (FADDX1_RVT)                   0.11 *     1.48 r
+  layer1[3].mac1/mult_14/U73/CO (FADDX1_RVT)                   0.10 *     1.58 r
+  layer1[3].mac1/mult_14/U72/CO (FADDX1_RVT)                   0.10 *     1.68 r
+  layer1[3].mac1/mult_14/U71/CO (FADDX1_RVT)                   0.10 *     1.78 r
+  layer1[3].mac1/mult_14/U70/CO (FADDX1_RVT)                   0.10 *     1.89 r
+  layer1[3].mac1/mult_14/U69/CO (FADDX1_RVT)                   0.10 *     1.99 r
+  layer1[3].mac1/mult_14/U68/CO (FADDX1_RVT)                   0.11 *     2.09 r
+  layer1[3].mac1/mult_14/U67/CO (FADDX1_RVT)                   0.11 *     2.20 r
+  layer1[3].mac1/mult_14/U66/CO (FADDX1_RVT)                   0.10 *     2.30 r
+  layer1[3].mac1/mult_14/U65/CO (FADDX1_RVT)                   0.10 *     2.40 r
+  layer1[3].mac1/mult_14/U64/CO (FADDX1_RVT)                   0.10 *     2.50 r
+  layer1[3].mac1/mult_14/U63/CO (FADDX1_RVT)                   0.11 *     2.61 r
+  layer1[3].mac1/mult_14/U62/CO (FADDX1_RVT)                   0.11 *     2.72 r
+  layer1[3].mac1/mult_14/U61/CO (FADDX1_RVT)                   0.10 *     2.83 r
+  layer1[3].mac1/mult_14/U60/CO (FADDX1_RVT)                   0.10 *     2.93 r
+  layer1[3].mac1/mult_14/U59/CO (FADDX1_RVT)                   0.10 *     3.03 r
+  layer1[3].mac1/mult_14/U58/CO (FADDX1_RVT)                   0.10 *     3.13 r
+  layer1[3].mac1/mult_14/U57/CO (FADDX1_RVT)                   0.10 *     3.23 r
+  layer1[3].mac1/mult_14/U56/CO (FADDX1_RVT)                   0.10 *     3.33 r
+  layer1[3].mac1/mult_14/U55/S (FADDX1_RVT)                    0.16 *     3.49 f
+  layer1[3].mac1/mult_14/product[27] (MAC_DW_mult_tc_1_1)      0.00       3.49 f
+  layer1[3].mac1/add_14/B[27] (MAC_DW01_add_0_1)               0.00       3.49 f
+  layer1[3].mac1/add_14/U1_27/S (FADDX1_RVT)                   0.14 *     3.63 r
+  layer1[3].mac1/add_14/SUM[27] (MAC_DW01_add_0_1)             0.00       3.63 r
+  layer1[3].mac1/acc_reg[27]/D (DFFARX1_RVT)                   0.00 *     3.63 r
+  data arrival time                                                       3.63
+
+  clock clk (rise edge)                                        4.00       4.00
+  clock network delay (propagated)                             0.06       4.06
+  layer1[3].mac1/acc_reg[27]/CLK (DFFARX1_RVT)                 0.00       4.06 r
+  library setup time                                          -0.06       4.00
+  data required time                                                      4.00
+  -------------------------------------------------------------------------------
+  data required time                                                      4.00
+  data arrival time                                                      -3.63
+  -------------------------------------------------------------------------------
+  slack (MET)                                                             0.37
+
+
+1
