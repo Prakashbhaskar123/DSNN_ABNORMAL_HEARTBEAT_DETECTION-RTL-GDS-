@@ -1,0 +1,41 @@
+Error: Width mismatch on port 'b' of reference to 'MAC' in 'DSNN_2Layer'. (LINK-3)
+Error: Unable to match ports of cell layer1[0].mac1 ('MAC') to 'MAC_WIDTH16'. (LINK-25)
+Error: Width mismatch on port 'b' of reference to 'MAC' in 'DSNN_2Layer'. (LINK-3)
+Error: Unable to match ports of cell layer1[1].mac1 ('MAC') to 'MAC_WIDTH16'. (LINK-25)
+Error: Width mismatch on port 'b' of reference to 'MAC' in 'DSNN_2Layer'. (LINK-3)
+Error: Unable to match ports of cell layer1[2].mac1 ('MAC') to 'MAC_WIDTH16'. (LINK-25)
+Error: Width mismatch on port 'b' of reference to 'MAC' in 'DSNN_2Layer'. (LINK-3)
+Error: Unable to match ports of cell layer1[3].mac1 ('MAC') to 'MAC_WIDTH16'. (LINK-25)
+ 
+****************************************
+Report : area
+Design : DSNN_2Layer
+Version: T-2022.03-SP5-4
+Date   : Sat Mar  7 10:41:39 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed32rvt_ss0p95v125c (File: /home/ece/ASICFULL/ASIC-Flow_labs_v1p4/library_32nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db)
+
+Number of ports:                          472
+Number of nets:                           707
+Number of cells:                          266
+Number of combinational cells:            169
+Number of sequential cells:                83
+Number of macros/black boxes:               0
+Number of buf/inv:                         11
+Number of references:                      12
+
+Combinational area:                496.343234
+Buf/Inv area:                       16.773504
+Noncombinational area:             562.166538
+Macro/Black Box area:                0.000000
+Net Interconnect area:             262.814069
+
+Total cell area:                  1058.509771
+Total area:                       1321.323840
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1
